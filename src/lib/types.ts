@@ -1,0 +1,14 @@
+export interface SkillsList {
+    title: string,
+    skills: string[],
+}
+
+export interface ProjectsType {
+    id: number,
+    project_image: string,
+    project_title: string,
+    live_url: string,
+    source_url: string,
+    description: string,
+    stack: string[],
+}

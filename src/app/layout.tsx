@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
 import { Nunito_Sans } from "next/font/google";
-// import SocialSections from "@/components/SocialSections";
+import Footer from "@/components/Footer";
 
 const nunitoSans = Nunito_Sans({
     display: 'swap',
@@ -12,10 +12,10 @@ const nunitoSans = Nunito_Sans({
 
 export const metadata: Metadata = {
     title: {
-        default: 'Disney Clone | Powered by Next.js',
-        template: '%s | Disney Clone',
+        default: 'Priyanshu Sharma (@xtechilad)',
+        template: '%s | Portfolio Website',
     },
-    description: 'This is a disney clone based on Next.js',
+    description: 'This is my portfolio website based on Next.js',
     icons: {
         icon: '/UserLogo.png'
     }
@@ -24,12 +24,12 @@ export const metadata: Metadata = {
 export default function RootLayout({ children, }: Readonly<{ children: React.ReactNode; }>) {
     return (
         <html lang="en">
-            <body className={`${nunitoSans.className} relative flex flex-col font-semibold max-w-screen h-screen bg-[#111031]`}>
+            <body className={`${nunitoSans.className} relative flex flex-col max-w-[1536px] mx-auto max-[1536px]:w-full h-screen bg-[#102531]`}>
                 <Header />
 
-                {/* <SocialSections /> */}
-
                 {children}
+
+                <Footer />
             </body>
         </html>
     );

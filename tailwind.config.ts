@@ -12,13 +12,8 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
         neon: "#45FFCA",
-        almostWhite: '#FFFFFCAA',
-      },
-      fontSize: {
-        // 'paragraph-text': '32px',
-      },
-      lineHeight: {
-        // 'paragraph-text': '24px',
+        gray1: '#FFFFFCAA',
+        almostWhite: '#FFFFFCCE',
       },
     },
   },
