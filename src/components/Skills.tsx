@@ -3,10 +3,11 @@ import { skillsList } from "@/constants/lists";
 
 import Image from "next/image";
 import { readexPro } from "@/lib/fonts";
+import { BulletPointIcon } from "@/icons/icons";
 
 export default function SkillsSection() {
     return (
-        <div id='skills' className="flex flex-col gap-12 pt-32 mx-16">
+        <div id='skills' className="flex flex-col gap-12 max-[1152px]:gap-10 max-[800px]:gap-8 pt-36 mx-16 max-[1280px]:mx-12 max-[800px]:mx-0">
             <SectionTitle 
                 title={'Skills'} 
                 index={3} 
@@ -15,8 +16,14 @@ export default function SkillsSection() {
             <div className={`${readexPro.className} flex flex-col font-bold gap-8`}>
                 {skillsList.map((item, index) => {
                     return (
-                        <div key={index} className="flex flex-col gap-2">
-                            <h1 className="text-[20px] leading-[36px] tracking-wide font-bold">{item.title}</h1>
+                        <div key={index} className="flex flex-col gap-3">
+                            <div className="flex items-center gap-2">
+                                <span className="max-[1024px]:mt-[2px]">
+                                    <BulletPointIcon />
+                                </span>
+
+                                <h1 className="italic text-[20px] leading-[36px] max-[1200px]:text-[18px] max-[1200px]:leading-7 max-[800px]:text-[16px] max-[800px]:leading-[22px] text-almostWhite tracking-wide font-bold">{item.title}</h1>
+                            </div>
 
                             <div className="flex flex-wrap gap-2">
                                 {item.skills.map((skill: string, index: number) => {

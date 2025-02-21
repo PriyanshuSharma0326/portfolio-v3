@@ -3,6 +3,8 @@ import "./globals.css";
 import Header from "@/components/Header";
 import { Nunito_Sans } from "next/font/google";
 import Footer from "@/components/Footer";
+import Menu from "@/components/Menu";
+import StoreProvider from "./StoreProvider";
 
 const nunitoSans = Nunito_Sans({
     display: 'swap',
@@ -23,14 +25,18 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children, }: Readonly<{ children: React.ReactNode; }>) {
     return (
-        <html lang="en">
-            <body className={`${nunitoSans.className} relative flex flex-col max-w-[1536px] mx-auto max-[1536px]:w-full h-screen bg-[#102531]`}>
-                <Header />
+        <StoreProvider>
+            <html lang="en">
+                <body className={`${nunitoSans.className} relative flex flex-col max-w-[1536px] mx-auto max-[1536px]:w-full h-screen bg-darkBlue`}>
+                    <Header />
 
-                {children}
+                    <Menu />
 
-                <Footer />
-            </body>
-        </html>
+                    {children}
+
+                    <Footer />
+                </body>
+            </html>
+        </StoreProvider>
     );
 }
