@@ -1,6 +1,10 @@
 import SectionTitle from "./SectionTitle";
 import { projects } from "@/constants/lists";
-import ProjectCard from "./ProjectCard";
+import dynamic from 'next/dynamic'
+const ComponentWithWindowAccess = dynamic(
+    () => import('@/components/ProjectCard'),
+    { ssr: false }
+)
 
 export default function ProjectsSection() {
     return (
@@ -13,7 +17,7 @@ export default function ProjectsSection() {
             <div className="flex flex-col gap-20 max-[1152px]:gap-28 max-[800px]:gap-6">
                 {projects.map(project => {
                     return (
-                        <ProjectCard 
+                        <ComponentWithWindowAccess 
                             key={project.id} 
                             item={project} 
                         />

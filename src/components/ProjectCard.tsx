@@ -24,9 +24,13 @@ export default function ProjectCard({ item }: ProjectCardProps) {
     const [iconSize, setIconSize] = useState(window.innerWidth < 800 ? 18 : 22);
 
     useEffect(() => {
+        if (typeof window === "undefined") return;
+
         const handleResize = () => {
-        setIconSize(window.innerWidth < 800 ? 14 : 22);
+            setIconSize(window.innerWidth < 800 ? 14 : 22);
         };
+
+        handleResize();
 
         window.addEventListener("resize", handleResize);
         return () => window.removeEventListener("resize", handleResize);
