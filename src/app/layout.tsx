@@ -27,7 +27,7 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
     return (
         <StoreProvider>
             <html lang="en">
-                <body className={`${nunitoSans.className} relative flex flex-col max-w-[1536px] mx-auto max-[1536px]:w-full h-screen bg-darkBlue`}>
+                <body className={`${nunitoSans.className} relative flex flex-col max-w-[1536px] mx-auto max-[1536px]:w-full h-screen bg-[linear-gradient(90deg,_rgba(9,27,37,1)_0%,_rgba(18,39,51,1)_100%)]`}>
                     <Header />
 
                     <Menu />

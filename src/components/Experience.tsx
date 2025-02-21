@@ -3,6 +3,7 @@ import SectionTitle from "./SectionTitle";
 import { BulletPointIcon } from "@/icons/icons";
 import Link from "next/link";
 import { experienceList } from "@/constants/lists";
+import { LeftToPositionWrapper } from "@/lib/FramerMotionWrappers";
 
 const josefinSans = Josefin_Sans({
     display: 'swap',
@@ -12,7 +13,7 @@ const josefinSans = Josefin_Sans({
 
 export default function Experience() {
     return (
-        <div id='experience' className={"flex flex-col gap-12 max-[1152px]:gap-10 max-[800px]:gap-8 pt-36 mx-40 max-[1280px]:mx-28 max-[1024px]:mx-20 max-[800px]:mx-0"}>
+        <div id='experience' className={"flex flex-col gap-12 max-[1152px]:gap-10 max-[800px]:gap-8 pt-36 max-[600px]:pt-28 mx-40 max-[1280px]:mx-28 max-[1024px]:mx-20 max-[800px]:mx-0"}>
             <SectionTitle 
                 title={'Experience'} 
                 index={2} 
@@ -27,13 +28,15 @@ export default function Experience() {
 
                 <ul className="pl-4 max-[1200px]:pl-2 max-[800px]:pl-0 list-none flex flex-col gap-3 text-gray1">
                     {experienceList.map((item: string, index: number) => (
-                        <li key={index} className="flex items-start gap-2 tracking-wider font-light text-[16px] leading-[26px] max-[500px]:text-[13px] max-[500px]:leading-[22px]">
-                            <span className="mt-[6px] max-[800px]:mt-1">
-                                <BulletPointIcon />
-                            </span>
+                        <LeftToPositionWrapper duration={0.4} delay={0.4 * index} key={index} className="flex items-start gap-2 tracking-wider font-light text-[16px] leading-[26px] max-[500px]:text-[13px] max-[500px]:leading-[22px]">
+                            <li className="flex items-start gap-2">
+                                <span className="mt-[6px] max-[800px]:mt-1">
+                                    <BulletPointIcon />
+                                </span>
 
-                            {item}
-                        </li>
+                                {item}
+                            </li>
+                        </LeftToPositionWrapper>
                     ))}
                 </ul>
             </div>

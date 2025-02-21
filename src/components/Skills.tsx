@@ -4,10 +4,11 @@ import { skillsList } from "@/constants/lists";
 import Image from "next/image";
 import { readexPro } from "@/lib/fonts";
 import { BulletPointIcon } from "@/icons/icons";
+import { XRotateWrapper } from "@/lib/FramerMotionWrappers";
 
 export default function SkillsSection() {
     return (
-        <div id='skills' className="flex flex-col gap-12 max-[1152px]:gap-10 max-[800px]:gap-8 pt-36 mx-16 max-[1280px]:mx-12 max-[800px]:mx-0">
+        <div id='skills' className="flex flex-col gap-12 max-[1152px]:gap-10 max-[800px]:gap-8 pt-36 max-[600px]:pt-28 mx-16 max-[1280px]:mx-12 max-[800px]:mx-0">
             <SectionTitle 
                 title={'Skills'} 
                 index={3} 
@@ -16,7 +17,7 @@ export default function SkillsSection() {
             <div className={`${readexPro.className} flex flex-col font-bold gap-8`}>
                 {skillsList.map((item, index) => {
                     return (
-                        <div key={index} className="flex flex-col gap-3">
+                        <XRotateWrapper delay={0.35 * index} key={index} className="flex flex-col gap-3">
                             <div className="flex items-center gap-2">
                                 <span className="max-[1024px]:mt-[2px]">
                                     <BulletPointIcon />
@@ -39,7 +40,7 @@ export default function SkillsSection() {
                                     )
                                 })}
                             </div>
-                        </div>
+                        </XRotateWrapper>
                     );
                 })}
             </div>

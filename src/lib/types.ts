@@ -12,3 +12,23 @@ export interface ProjectsType {
     description: string,
     stack: string[],
 }
+
+export interface XRotateWrapperProps {
+    children: React.ReactNode;
+    className?: string;
+    delay?: number;
+    duration?: number;
+}
+
+export interface LeftToPositionWrapperProps {
+    children: React.ReactNode;
+    className?: string;
+    delay?: number;
+    duration?: number;
+}
+
+export interface SectionrapperProps {
+    children: React.ReactNode;
+    delay?: number;
+    duration?: number;
+}

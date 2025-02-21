@@ -74,7 +74,7 @@ const skillsList: SkillsList[] = [
 const projects: ProjectsType[] = [
     {
         id: 1,
-        project_image: 'https://private-user-images.githubusercontent.com/54506478/415086317-718c60f6-86be-4072-aa66-e9172b25027b.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDAwNDEwMTcsIm5iZiI6MTc0MDA0MDcxNywicGF0aCI6Ii81NDUwNjQ3OC80MTUwODYzMTctNzE4YzYwZjYtODZiZS00MDcyLWFhNjYtZTkxNzJiMjUwMjdiLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAyMjAlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMjIwVDA4MzgzN1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWQyYTFhYmJiNTU1ZmIwNDU2ODA4NDlkZTg4NWFjMmY5YjZmNzg2YzljZWZhZTEyYjRhM2ViZjhmOTc5NDQ3YzYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.ROMPyK4ryLN6THQBNkKxH79oAlePVtJvS91JH4953ow',
+        project_image: 'https://raw.githubusercontent.com/PriyanshuSharma0326/spotify-clone/refs/heads/main/public/media/melofy-spotify-clone.vercel.app_.png',
         project_title: 'Spotify Clone',
         live_url: 'https://melofy-spotify-clone.vercel.app/',
         source_url: 'https://github.com/PriyanshuSharma0326/spotify-clone',

@@ -2,6 +2,7 @@
 
 import { GithubIcon, LinkSquareIcon } from "@/icons/icons";
 import { readexPro, josefinSans } from "@/lib/fonts";
+import { LeftToPositionWrapper } from "@/lib/FramerMotionWrappers";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -37,7 +38,7 @@ export default function ProjectCard({ item }: ProjectCardProps) {
     }, []);
 
     return (
-        <div className="w-full relative">
+        <LeftToPositionWrapper className="w-full relative">
             <div className="w-[55%] max-[1024px]:w-1/2 max-[800px]:w-full relative group cursor-pointer">
                 <Image
                     src={item.project_image} 
@@ -90,6 +91,6 @@ export default function ProjectCard({ item }: ProjectCardProps) {
                     </Link>
                 </div>
             </div>
-        </div>
+        </LeftToPositionWrapper>
     );
 }
