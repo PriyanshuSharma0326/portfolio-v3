@@ -28,7 +28,7 @@ export default function Experience() {
 
                 <ul className="pl-4 max-[1200px]:pl-2 max-[800px]:pl-0 list-none flex flex-col gap-3 text-gray1">
                     {experienceList.map((item: string, index: number) => (
-                        <LeftToPositionWrapper duration={0.4} delay={0.4 * index} key={index} className="flex items-start gap-2 tracking-wider font-light text-[16px] leading-[26px] max-[500px]:text-[13px] max-[500px]:leading-[22px]">
+                        <LeftToPositionWrapper duration={0.25} delay={0.25 * index} key={index} className="flex items-start gap-2 tracking-wider font-light text-[16px] leading-[26px] max-[500px]:text-[13px] max-[500px]:leading-[22px]">
                             <li className="flex items-start gap-2">
                                 <span className="mt-[6px] max-[800px]:mt-1">
                                     <BulletPointIcon />

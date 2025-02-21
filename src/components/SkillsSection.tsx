@@ -17,7 +17,7 @@ export default function SkillsSection() {
             <div className={`${readexPro.className} flex flex-col font-bold gap-8`}>
                 {skillsList.map((item, index) => {
                     return (
-                        <XRotateWrapper delay={0.35 * index} key={index} className="flex flex-col gap-3">
+                        <XRotateWrapper duration={0.25} delay={0.25 * index} key={index} className="flex flex-col gap-3">
                             <div className="flex items-center gap-2">
                                 <span className="max-[1024px]:mt-[2px]">
                                     <BulletPointIcon />

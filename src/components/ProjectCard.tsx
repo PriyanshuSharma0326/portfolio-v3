@@ -38,7 +38,7 @@ export default function ProjectCard({ item }: ProjectCardProps) {
     }, []);
 
     return (
-        <LeftToPositionWrapper className="w-full relative">
+        <LeftToPositionWrapper duration={0.5} className="w-full relative">
             <div className="w-[55%] max-[1024px]:w-1/2 max-[800px]:w-full relative group cursor-pointer">
                 <Image
                     src={item.project_image} 

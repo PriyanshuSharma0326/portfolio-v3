@@ -1,45 +1,44 @@
 'use client';
 
-import { josefinSans, rubik } from "@/lib/fonts";
-import SocialLink from "./SocialLink";
 import { GithubSocial, InstagramSocial, LinkedInSocial, TelegramSocial, TwitterSocial } from "@/icons/socialIcons";
+import { XRotateWrapper } from '@/lib/FramerMotionWrappers';
+import SocialLink from './SocialLink';
 
-export default function Footer() {
+export default function SocialLinks() {
     return (
-        <div className={`${josefinSans.className} flex flex-col items-center gap-3 max-[1200px]:gap-2 max-[800px]:gap-1 py-4`}>
-            <p className="font-light tracking-wide text-center text-[16px] leading-[22px] max-[800px]:text-[14px] max-[800px]:leading-[18px] text-gray1">Designed & Developed by Priyanshu</p>
-
-            <h1 className={`${rubik.className} max-[800px]:hidden tracking-normal font-normal text-neon text-[14px] leading-[22px] max-[800px]:text-[12px] max-[800px]:leading-[18px]`}>@xtechilad</h1>
-
-            <div className="hidden max-[800px]:flex items-center gap-4 mt-2">
+        <div className="fixed right-0 bottom-0 h-[55%] w-48 max-[1440px]:w-40 max-[1280px]:w-32 max-[1152px]:w-28 max-[1024px]:w-20 max-[800px]:hidden flex flex-col items-center">
+            <div className="h-full flex flex-col items-center gap-4">
                 <SocialLink 
                     icon={GithubSocial} 
+                    delay={1.25} 
                     link={'https://www.github.com/PriyanshuSharma0326'} 
                 />
 
                 <SocialLink 
                     icon={LinkedInSocial} 
-                    delay={0.25} 
+                    delay={1} 
                     link={'https://www/linkedin.com/in/PriyanshuSharma0326'} 
                 />
 
                 <SocialLink 
                     icon={InstagramSocial} 
-                    delay={0.5} 
+                    delay={0.75} 
                     link={'https://www.instagram.com/xtechilad.jpg'} 
                 />
 
                 <SocialLink 
                     icon={TwitterSocial} 
-                    delay={0.75} 
+                    delay={0.5} 
                     link={'https://www.x.com/xtechilad'} 
                 />
 
                 <SocialLink 
                     icon={TelegramSocial} 
-                    delay={1} 
+                    delay={0.25} 
                     link={'https://t.me/xtechilad'} 
                 />
+
+                <XRotateWrapper className="mt-4 w-[2px] bg-[linear-gradient(180deg,_rgba(69,255,202,1)_0%,_rgba(0,0,0,0)_100%)] flex-grow"></XRotateWrapper>
             </div>
         </div>
     );

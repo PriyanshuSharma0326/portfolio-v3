@@ -12,17 +12,17 @@ export default function AboutMe() {
 
             <div className="flex items-center gap-16 max-[1024px]:gap-[58px] max-[800px]:flex-col-reverse">
                 <div className="w-[70%] max-[800px]:w-full text-[16px] leading-[26px] max-[500px]:text-[13px] max-[500px]:leading-[22px] tracking-wider font-light text-gray1 flex flex-col gap-4">
-                    <LeftToPositionWrapper delay={0.15}>
+                    <LeftToPositionWrapper duration={0.25} delay={0.15}>
                         <p>Heyy! I&#39;m Priyanshu, and I craft digital experiences that are both functional and delightful. Passionate about the fusion of design and technology, I thrive on building dynamic web apps, optimizing performance, and exploring the latest frontend tools to bring ideas to life.</p>
                     </LeftToPositionWrapper>
 
-                    <LeftToPositionWrapper delay={0.9}>
+                    <LeftToPositionWrapper duration={0.25} delay={0.4}>
                         <p>Beyond the web, I&#39;m driven by the ever-evolving world of technology. I enjoy tackling complex problems, sharpening my problem-solving skills, and diving into cloud technologies to expand my expertise.</p>
                     </LeftToPositionWrapper>
                 </div>
 
                 <div className="max-[800px]:ml-4 w-[30%] max-[1024px]:w-1/2 ">
-                    <XRotateWrapper delay={0.75} duration={0.55} className="w-full h-full relative group">
+                    <XRotateWrapper delay={0.4} duration={0.25} className="w-full h-full relative group">
                         <Image 
                             src='/ProfilePicture.png' 
                             alt='User Image' 

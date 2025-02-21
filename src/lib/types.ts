@@ -14,7 +14,7 @@ export interface ProjectsType {
 }
 
 export interface XRotateWrapperProps {
-    children: React.ReactNode;
+    children?: React.ReactNode;
     className?: string;
     delay?: number;
     duration?: number;
@@ -31,4 +31,8 @@ export interface SectionrapperProps {
     children: React.ReactNode;
     delay?: number;
     duration?: number;
+}
+
+export interface SocialIconProps extends React.SVGProps<SVGSVGElement> {
+    color?: string,
 }

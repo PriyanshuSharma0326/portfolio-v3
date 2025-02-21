@@ -24,7 +24,7 @@ function HeaderLink(item: { title: string, id:string, index: number }) {
     };
 
     return (
-        <div onClick={() => scrollToSection(item.id)} className="flex flex-col items-center gap-[6px] max-[600px]:gap-[6px] font-bold">
+        <div onClick={() => scrollToSection(item.id)} className="cursor-pointer flex flex-col items-center gap-[6px] max-[600px]:gap-[6px] font-bold">
             <h1 className={`${robotoMono.className} tracking-tight text-neon max-[600px]:text-[14px] max-[600px]:leading-5`}>0{item.index + 1}.</h1>
 
             <p className={`${readexPro.className} tracking-wide font-normal text-[18px] leading-7 max-[600px]:text-[16px] max-[600px]:leading-[22px]`}>{item.title}</p>
