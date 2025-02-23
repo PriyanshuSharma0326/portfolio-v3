@@ -1,15 +1,9 @@
-import { Josefin_Sans } from "next/font/google";
 import SectionTitle from "./SectionTitle";
 import { BulletPointIcon } from "@/icons/icons";
 import Link from "next/link";
 import { experienceList } from "@/constants/lists";
 import { LeftToPositionWrapper } from "@/lib/FramerMotionWrappers";
-
-const josefinSans = Josefin_Sans({
-    display: 'swap',
-    subsets: ["latin"],
-    weight: ['200', '300', '400', '500', '600', '700']
-});
+import { josefinSans } from "@/lib/fonts";
 
 export default function Experience() {
     return (
