@@ -34,11 +34,11 @@ export default function AboutMe() {
                         />
 
                         <div 
-                            className="w-full aspect-square absolute -z-10 rounded-md -left-2 max-[1024px]:-left-1 top-[2px] border-[3px] border-neon group-hover:left-8 transition-all duration-300 delay-75" 
+                            className="w-full aspect-square absolute -z-10 rounded-md -left-2 max-[1024px]:-left-1 top-[3px] border-[3px] border-neon group-hover:left-8 max-[1024px]:group-hover:left-6 transition-all duration-300 delay-75" 
                             style={{ width: '90%', height: 'auto' }} 
                         ></div>
 
-                        <div className="w-full aspect-square bg-[#45FFCA1F] rounded-md transition-all duration-300 delay-75 absolute -z-20 top-[2px] -left-2 max-[1024px]:-left-1 group-hover:top-10" style={{ width: '90%', height: 'auto' }}></div>
+                        <div className="w-full aspect-square bg-[#45FFCA1F] rounded-md transition-all duration-300 delay-75 absolute -z-20 top-[3px] -left-2 max-[1024px]:-left-1 group-hover:top-10 max-[1024px]:group-hover:top-8" style={{ width: '90%', height: 'auto' }}></div>
                     </XRotateWrapper>
                 </div>
             </div>
