@@ -1,4 +1,4 @@
-import { Josefin_Sans, Readex_Pro, Lato, Roboto_Mono, Rubik } from "next/font/google";
+import { Josefin_Sans, Readex_Pro, Lato, Roboto_Mono, Rubik, Nunito_Sans } from "next/font/google";
 
 const josefinSans = Josefin_Sans({
     display: 'swap',
@@ -30,10 +30,17 @@ const rubik = Rubik({
     weight: ['300', '400', '500', '600', '700', '800', '900']
 });
 
+const nunitoSans = Nunito_Sans({
+    display: 'swap',
+    subsets: ["latin"],
+    weight: ['200', '300', '400', '500', '600', '700']
+});
+
 export {
     josefinSans,
     readexPro,
     lato,
     robotoMono,
     rubik,
+    nunitoSans,
 }

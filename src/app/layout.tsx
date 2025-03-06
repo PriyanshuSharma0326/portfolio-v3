@@ -1,17 +1,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
-import { Nunito_Sans } from "next/font/google";
 import Footer from "@/components/Footer";
 import Menu from "@/components/Menu";
 import StoreProvider from "./StoreProvider";
 import SocialLinks from "@/components/SocialLinks";
-
-const nunitoSans = Nunito_Sans({
-    display: 'swap',
-    subsets: ["latin"],
-    weight: ['200', '300', '400', '500', '600', '700']
-});
+import { nunitoSans } from "@/lib/fonts";
 
 export const metadata: Metadata = {
     title: {

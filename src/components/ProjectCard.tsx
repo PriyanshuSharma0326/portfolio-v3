@@ -3,20 +3,10 @@
 import { GithubIcon, LinkSquareIcon } from "@/icons/icons";
 import { readexPro, josefinSans } from "@/lib/fonts";
 import { LeftToPositionWrapper } from "@/lib/FramerMotionWrappers";
+import { ProjectCardProps } from "@/lib/types";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-
-interface ProjectCardProps {
-    item: {
-        project_image: string;
-        project_title: string;
-        description: string;
-        source_url: string,
-        live_url: string,
-        stack: string[];
-    };
-}
 
 export default function ProjectCard({ item }: ProjectCardProps) {
     const [isHoveringGH, setIsHoveringGH] = useState(false);

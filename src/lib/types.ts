@@ -13,6 +13,17 @@ export interface ProjectsType {
     stack: string[],
 }
 
+export interface ProjectCardProps {
+    item: {
+        project_image: string;
+        project_title: string;
+        description: string;
+        source_url: string,
+        live_url: string,
+        stack: string[];
+    };
+}
+
 export interface XRotateWrapperProps {
     children?: React.ReactNode;
     className?: string;
@@ -35,4 +46,8 @@ export interface SectionrapperProps {
 
 export interface SocialIconProps extends React.SVGProps<SVGSVGElement> {
     color?: string,
+}
+
+export interface IconProps extends React.SVGProps<SVGSVGElement> {
+    size?: number;
 }

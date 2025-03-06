@@ -1,26 +1,12 @@
-'use client'
-
 import { josefinSans, readexPro } from "@/lib/fonts";
 import { LeftToPositionWrapper, XRotateWrapper } from "@/lib/FramerMotionWrappers";
 import Link from "next/link";
-import { 
-    // useEffect, 
-    useMemo, 
-    // useState 
-} from "react";
 
 export default function Introduction() {
-    // const [displayedName, setDisplayedName] = useState('');
-    // const [isTypingComplete, setIsTypingComplete] = useState(false);
     const fullName = "Priyanshu Sharma";
 
-    const intro = useMemo(() => 
-        "Hello there! I'm a passionate front end developer dedicated to creating visually stunning and functional websites. My expertise lies in crafting engaging user experiences, and I thrive on exploring the latest technologies to stay at the forefront of development trends.",
-    []);
-
-    const intro2 = useMemo(() => 
-        "Welcome to my portfolio website, a space where I showcase my passion for web development and art!",
-    []);
+    const intro = "Hello there! I'm a passionate front end developer dedicated to creating visually stunning and functional websites. My expertise lies in crafting engaging user experiences, and I thrive on exploring the latest technologies to stay at the forefront of development trends.";
+    const intro2 = "Welcome to my portfolio website, a space where I showcase my passion for web development and art!";
 
     return (
         <div className="flex flex-col">
