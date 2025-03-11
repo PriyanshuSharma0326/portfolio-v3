@@ -40,6 +40,7 @@ export default function Menu() {
     }
 
     const menuOpen = useAppSelector(state => state.app.menuOpen);
+    const language = useAppSelector(state => state.app.language);
 
     const [containerOpen, setContainerOpen] = useState(false);
     const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -73,7 +74,7 @@ export default function Menu() {
                         return (
                             <HeaderLink 
                                 key={index} 
-                                title={link.title} 
+                                title={link[language as 'en' | 'es'].title} 
                                 id={link.id} 
                                 index={index} 
                             />
