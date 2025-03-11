@@ -15,7 +15,7 @@ const scrollToSection = (id: string) => {
     }
 };
 
-function HeaderLink(item: { title: string, id:string, index: number }) {
+function HeaderLink(item: { title: string, id: string, index: number }) {
     return (
         <p onClick={() => scrollToSection(item.id)} className="text-base max-[1200px]:text-[14px] max-[1200px]:leading-5 max-[800px]:text-[13px] max-[800px]:leading-[20px] max-[800px]:font-normal cursor-pointer delay-100 hover:text-neon relative inline-block 
             bg-gradient-to-r from-neon to-neon bg-[length:0%_100%] bg-no-repeat 
@@ -26,6 +26,7 @@ function HeaderLink(item: { title: string, id:string, index: number }) {
 export default function Header() {
     const dispatch = useAppDispatch();
     const menuOpen = useAppSelector(state => state.app.menuOpen);
+    const language = useAppSelector(state => state.app.language);
 
     const [isHovered, setIsHovered] = useState(false);
 
@@ -67,10 +68,12 @@ export default function Header() {
 
             <div className={`${josefinSans.className} flex items-center gap-6 font-normal text-[14px] leading-5 tracking-wide text-[#FFFFFCAA] max-[1024px]:hidden`}>
                 {headerLinks.map((link, index: number) => {
+                    const linkText = link[language as 'en' | 'es'].title;
+
                     return (
                         <HeaderLink 
                             key={link.id} 
-                            title={link.title} 
+                            title={linkText} 
                             id={link.id} 
                             index={index} 
                         />

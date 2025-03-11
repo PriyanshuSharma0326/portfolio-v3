@@ -1,23 +1,45 @@
 export interface SkillsList {
-    title: string,
+    en: {
+        title: string,
+    }
+    es: {
+        title: string,
+    }
     skills: string[],
+}
+
+export interface experienceListType {
+    en: string[],
+    es: string[],
 }
 
 export interface ProjectsType {
     id: number,
     project_image: string,
-    project_title: string,
+    project_title: {
+        en: string,
+        es: string,
+    },
     live_url: string,
     source_url: string,
-    description: string,
+    description: {
+        en: string,
+        es: string,
+    },
     stack: string[],
 }
 
 export interface ProjectCardProps {
     item: {
         project_image: string;
-        project_title: string;
-        description: string;
+        project_title: {
+            en: string,
+            es: string,
+        };
+        description: {
+            en: string,
+            es: string,
+        };
         source_url: string,
         live_url: string,
         stack: string[];
@@ -50,4 +72,10 @@ export interface SocialIconProps extends React.SVGProps<SVGSVGElement> {
 
 export interface IconProps extends React.SVGProps<SVGSVGElement> {
     size?: number;
+}
+
+// App State
+export interface AppState {
+    menuOpen: boolean;
+    language: string,
 }

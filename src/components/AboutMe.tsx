@@ -1,23 +1,44 @@
 import { LeftToPositionWrapper, XRotateWrapper } from "@/app/_lib/FramerMotionWrappers";
 import SectionTitle from "./SectionTitle";
 import Image from "next/image";
+import { useAppSelector } from "@/app/_lib/store";
 
 export default function AboutMe() {
+    const language = useAppSelector(state => state.app.language);
+
+    type Translations = {
+        [key: string]: {
+            intro: string;
+            intro2: string;
+        };
+    };
+
+    const translations: Translations = {
+        en: {
+            intro: "Heyy! I'm Priyanshu, and I craft digital experiences that are both functional and delightful. Passionate about the fusion of design and technology, I thrive on building dynamic web apps, optimizing performance, and exploring the latest frontend tools to bring ideas to life.",
+            intro2: "Beyond the web, I'm driven by the ever-evolving world of technology. I enjoy tackling complex problems, sharpening my problem-solving skills, and diving into cloud technologies to expand my expertise."
+        },
+        es: {
+            intro: "¡Holaa! Soy Priyanshu, y yo creo experiencias digitales que son a la vez funcionales y exquisitas. Apasionado por la fusión del diseño y la tecnología, me encanta crear aplicaciones web dinámicas, optimizar el rendimiento y explorar las últimas herramientas de frontend para dar vida a las ideas.",
+            intro2: "Más allá de la web, me motiva el mundo de la tecnología, en constante evolución. Disfruto abordar problemas complejos, perfeccionar mis habilidades de resolución de problemas y sumergirme en tecnologías de la nube para ampliar mi experiencia."
+        }
+    }
+
     return (
         <div id='about-me' className={"flex flex-col gap-12 pt-36 max-[600px]:pt-28 mx-16 max-[1280px]:mx-12 max-[1024px]:mx-8 max-[800px]:mx-0"}>
             <SectionTitle 
-                title={'About Me'} 
+                title={language === 'en' ? 'About Me' : 'Acerca de mí'} 
                 index={1}
             />
 
             <div className="flex items-center gap-16 max-[1024px]:gap-[58px] max-[800px]:flex-col-reverse">
                 <div className="w-[70%] max-[800px]:w-full text-[16px] leading-[26px] max-[500px]:text-[13px] max-[500px]:leading-[22px] tracking-wider font-light text-gray1 flex flex-col gap-4">
                     <LeftToPositionWrapper duration={0.25} delay={0.15}>
-                        <p>Heyy! I&#39;m Priyanshu, and I craft digital experiences that are both functional and delightful. Passionate about the fusion of design and technology, I thrive on building dynamic web apps, optimizing performance, and exploring the latest frontend tools to bring ideas to life.</p>
+                        <p>{translations[language].intro}</p>
                     </LeftToPositionWrapper>
 
                     <LeftToPositionWrapper duration={0.25} delay={0.4}>
-                        <p>Beyond the web, I&#39;m driven by the ever-evolving world of technology. I enjoy tackling complex problems, sharpening my problem-solving skills, and diving into cloud technologies to expand my expertise.</p>
+                        <p>{translations[language].intro2}</p>
                     </LeftToPositionWrapper>
                 </div>
 

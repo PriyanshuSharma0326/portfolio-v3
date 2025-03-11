@@ -6,6 +6,7 @@ import Menu from "@/components/Menu";
 import StoreProvider from "./StoreProvider";
 import SocialLinks from "@/components/SocialLinks";
 import { nunitoSans } from "@/app/_lib/fonts";
+// import LanguageToggle from "@/components/LanguageToggle";
 
 export const metadata: Metadata = {
     title: {
@@ -26,6 +27,8 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
                     <Header />
 
                     <Menu />
+
+                    {/* <LanguageToggle /> */}
 
                     {children}
 

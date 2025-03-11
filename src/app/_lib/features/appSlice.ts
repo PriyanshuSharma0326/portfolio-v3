@@ -1,11 +1,9 @@
 import { createSlice } from '@reduxjs/toolkit';
-
-interface AppState {
-    menuOpen: boolean;
-}
+import { AppState } from '../types';
 
 const initialState: AppState = {
     menuOpen: false,
+    language: 'en'
 };
 
 const appSlice = createSlice({
@@ -17,9 +15,15 @@ const appSlice = createSlice({
         },
         closeMenu: (state) => {
             state.menuOpen = false;
-        }
+        },
+        setDefaultLanguage: (state) => {
+            state.language = 'en';
+        },
+        changeToSpanish: (state) => {
+            state.language = 'es';
+        },
     }
 });
 
-export const { openMenu, closeMenu } = appSlice.actions;
+export const { openMenu, closeMenu, setDefaultLanguage, changeToSpanish } = appSlice.actions;
 export default appSlice.reducer;

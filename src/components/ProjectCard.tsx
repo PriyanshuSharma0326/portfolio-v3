@@ -7,10 +7,12 @@ import { ProjectCardProps } from "@/app/_lib/types";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { useAppSelector } from "@/app/_lib/store";
 
 export default function ProjectCard({ item }: ProjectCardProps) {
     const [isHoveringGH, setIsHoveringGH] = useState(false);
     const [isHoveringLink, setIsHoveringLink] = useState(false);
+    const language = useAppSelector(state => state.app.language);
 
     const [iconSize, setIconSize] = useState(window.innerWidth < 800 ? 18 : 22);
 
@@ -32,7 +34,7 @@ export default function ProjectCard({ item }: ProjectCardProps) {
             <div className="w-[55%] max-[1024px]:w-1/2 max-[800px]:w-full relative group cursor-pointer">
                 <Image
                     src={item.project_image} 
-                    alt={item.project_title} 
+                    alt={item.project_title[language as 'en' | 'es']} 
                     width={1920} 
                     height={1080} 
                     style={{ width: '100%', height: 'auto' }} 
@@ -48,11 +50,11 @@ export default function ProjectCard({ item }: ProjectCardProps) {
                                 bg-gradient-to-r from-neon to-neon bg-[length:0%_100%] bg-no-repeat 
                                 transition-all duration-500 hover:bg-[length:100%_100%] text-almostWhite max-[800px]:text-neon hover:text-[#45FFCA67] max-[800px]:hover:text-neon bg-clip-text`}
                     >
-                    {item.project_title}
+                    {item.project_title[language as 'en' | 'es']}
                 </h1>
 
                 <div className="p-6 max-[800px]:p-0 w-full h-fit bg-darkBlue1 max-[800px]:bg-transparent rounded-md tracking-wider text-[14px] leading-[22px] max-[800px]:text-[12px] max-[800px]:leading-[18px] font-normal shadow-[-2px_0px_22px_0px_#23205487]">
-                    <p className="text-gray1">{item.description}</p>
+                    <p className="text-gray1">{item.description[language as 'en' | 'es']}</p>
                 </div>
 
                 <div className={`${josefinSans.className} w-[90%] max-[800px]:w-full ml-auto max-[800px]:ml-0 justify-end max-[800px]:justify-start flex flex-wrap gap-3 max-[1200px]:gap-2 text-gray1`}>
