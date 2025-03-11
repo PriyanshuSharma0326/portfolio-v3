@@ -1,4 +1,4 @@
-import { ProjectsType, SkillsList } from "../lib/types";
+import { ProjectsType, SkillsList } from "@/app/_lib/types";
 
 const headerLinks = [
     { id: 'about-me', title: 'About Me' },
