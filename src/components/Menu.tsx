@@ -1,10 +1,10 @@
 'use client';
 
 import { headerLinks } from "@/constants/lists";
-import { CrossIcon } from "@/icons/icons";
-import { closeMenu } from "@/lib/features/appSlice";
-import { josefinSans, readexPro, robotoMono } from "@/lib/fonts";
-import { useAppDispatch, useAppSelector } from "@/lib/store";
+import { CrossIcon } from "@/app/_lib/icons/icons";
+import { closeMenu } from "@/app/_lib/features/appSlice";
+import { josefinSans, readexPro, robotoMono } from "@/app/_lib/fonts";
+import { useAppDispatch, useAppSelector } from "@/app/_lib/store";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 

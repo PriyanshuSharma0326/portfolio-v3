@@ -1,4 +1,4 @@
-import { readexPro, robotoMono } from "@/lib/fonts";
+import { readexPro, robotoMono } from "@/app/_lib/fonts";
 import React from "react";
 
 export default function SectionTitle({ title, index }: { title: string; index: number }) {

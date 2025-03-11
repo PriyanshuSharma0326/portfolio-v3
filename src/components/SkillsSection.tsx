@@ -2,9 +2,9 @@ import SectionTitle from "./SectionTitle";
 import { skillsList } from "@/constants/lists";
 
 import Image from "next/image";
-import { readexPro } from "@/lib/fonts";
-import { BulletPointIcon } from "@/icons/icons";
-import { XRotateWrapper } from "@/lib/FramerMotionWrappers";
+import { readexPro } from "@/app/_lib/fonts";
+import { BulletPointIcon } from "@/app/_lib/icons/icons";
+import { XRotateWrapper } from "@/app/_lib/FramerMotionWrappers";
 
 export default function SkillsSection() {
     return (

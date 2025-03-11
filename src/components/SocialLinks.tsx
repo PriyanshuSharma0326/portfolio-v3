@@ -1,7 +1,7 @@
 'use client';
 
-import { GithubSocial, InstagramSocial, LinkedInSocial, TelegramSocial, TwitterSocial } from "@/icons/socialIcons";
-import { XRotateWrapper } from '@/lib/FramerMotionWrappers';
+import { GithubSocial, InstagramSocial, LinkedInSocial, TelegramSocial, TwitterSocial } from "@/app/_lib/icons/socialIcons";
+import { XRotateWrapper } from '@/app/_lib/FramerMotionWrappers';
 import SocialLink from './SocialLink';
 
 export default function SocialLinks() {

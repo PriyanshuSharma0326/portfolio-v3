@@ -1,9 +1,9 @@
 'use client';
 
-import { GithubIcon, LinkSquareIcon } from "@/icons/icons";
-import { readexPro, josefinSans } from "@/lib/fonts";
-import { LeftToPositionWrapper } from "@/lib/FramerMotionWrappers";
-import { ProjectCardProps } from "@/lib/types";
+import { GithubIcon, LinkSquareIcon } from "@/app/_lib/icons/icons";
+import { readexPro, josefinSans } from "@/app/_lib/fonts";
+import { LeftToPositionWrapper } from "@/app/_lib/FramerMotionWrappers";
+import { ProjectCardProps } from "@/app/_lib/types";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";

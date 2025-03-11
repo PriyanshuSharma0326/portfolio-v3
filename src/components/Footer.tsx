@@ -1,8 +1,8 @@
 'use client';
 
-import { josefinSans, rubik } from "@/lib/fonts";
+import { josefinSans, rubik } from "@/app/_lib/fonts";
 import SocialLink from "./SocialLink";
-import { GithubSocial, InstagramSocial, LinkedInSocial, TelegramSocial, TwitterSocial } from "@/icons/socialIcons";
+import { GithubSocial, InstagramSocial, LinkedInSocial, TelegramSocial, TwitterSocial } from "@/app/_lib/icons/socialIcons";
 
 export default function Footer() {
     return (

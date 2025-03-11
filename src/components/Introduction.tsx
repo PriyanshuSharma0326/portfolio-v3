@@ -1,5 +1,5 @@
-import { josefinSans, readexPro } from "@/lib/fonts";
-import { LeftToPositionWrapper, XRotateWrapper } from "@/lib/FramerMotionWrappers";
+import { josefinSans, readexPro } from "@/app/_lib/fonts";
+import { LeftToPositionWrapper, XRotateWrapper } from "@/app/_lib/FramerMotionWrappers";
 import Link from "next/link";
 
 export default function Introduction() {

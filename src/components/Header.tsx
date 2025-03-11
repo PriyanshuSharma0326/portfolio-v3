@@ -1,11 +1,11 @@
 'use client';
 
 import Image from "next/image";
-import { josefinSans, robotoMono } from "@/lib/fonts";
+import { josefinSans, robotoMono } from "@/app/_lib/fonts";
 import { headerLinks } from "@/constants/lists";
-import { MenuIcon } from "@/icons/icons";
-import { useAppDispatch, useAppSelector } from "@/lib/store";
-import { openMenu } from "@/lib/features/appSlice";
+import { MenuIcon } from "@/app/_lib/icons/icons";
+import { useAppDispatch, useAppSelector } from "@/app/_lib/store";
+import { openMenu } from "@/app/_lib/features/appSlice";
 import { useState } from "react";
 
 const scrollToSection = (id: string) => {

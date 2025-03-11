@@ -1,6 +1,6 @@
 'use client';
 
-import { SocialLinkWrapper } from "@/lib/FramerMotionWrappers";
+import { SocialLinkWrapper } from "@/app/_lib/FramerMotionWrappers";
 import Link from "next/link";
 import { useState } from "react";
 

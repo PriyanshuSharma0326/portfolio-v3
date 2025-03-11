@@ -1,9 +1,9 @@
 import SectionTitle from "./SectionTitle";
-import { BulletPointIcon } from "@/icons/icons";
+import { BulletPointIcon } from "@/app/_lib/icons/icons";
 import Link from "next/link";
 import { experienceList } from "@/constants/lists";
-import { LeftToPositionWrapper } from "@/lib/FramerMotionWrappers";
-import { josefinSans } from "@/lib/fonts";
+import { LeftToPositionWrapper } from "@/app/_lib/FramerMotionWrappers";
+import { josefinSans } from "@/app/_lib/fonts";
 
 export default function Experience() {
     return (

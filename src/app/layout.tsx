@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 import Menu from "@/components/Menu";
 import StoreProvider from "./StoreProvider";
 import SocialLinks from "@/components/SocialLinks";
-import { nunitoSans } from "@/lib/fonts";
+import { nunitoSans } from "@/app/_lib/fonts";
 
 export const metadata: Metadata = {
     title: {

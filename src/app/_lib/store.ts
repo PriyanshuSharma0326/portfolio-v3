@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit';
-import appReducer from '@/lib/features/appSlice';
+import appReducer from '@/app/_lib/features/appSlice';
 import { TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux';
 
 export const makeStore = () => {

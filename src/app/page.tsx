@@ -6,8 +6,8 @@ import Experience from "@/components/Experience";
 import Introduction from "@/components/Introduction";
 import ProjectsSection from "@/components/ProjectsSection";
 import SkillsSection from "@/components/SkillsSection";
-import { lato } from "@/lib/fonts";
-import { SectionWrapper } from "@/lib/FramerMotionWrappers";
+import { lato } from "@/app/_lib/fonts";
+import { SectionWrapper } from "@/app/_lib/FramerMotionWrappers";
 
 export default function Home() {
     return (

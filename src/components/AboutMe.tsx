@@ -1,4 +1,4 @@
-import { LeftToPositionWrapper, XRotateWrapper } from "@/lib/FramerMotionWrappers";
+import { LeftToPositionWrapper, XRotateWrapper } from "@/app/_lib/FramerMotionWrappers";
 import SectionTitle from "./SectionTitle";
 import Image from "next/image";
 
