@@ -1,4 +1,4 @@
-import { SocialIconProps } from "@/lib/types";
+import { SocialIconProps } from "@/app/_lib/types";
 
 const LinkedInSocial: React.FC<SocialIconProps> = ({ color = "#FFFFFCAA", ...props }) => (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={20} height={20} color={color} fill={"none"} {...props}>
