@@ -79,7 +79,7 @@ const experienceList: ExperienceListType = [
     {
         id: 1,
         en: {
-            role: "Frontend Developer",
+            role: "ReactJS Developer",
             time: "June 2025 - Present",
             organisation: "branchX",
             description: [
@@ -91,7 +91,7 @@ const experienceList: ExperienceListType = [
             ]
         },
         es: {
-            role: "Desarrollador Frontend",
+            role: "Desarrollador de ReactJS",
             time: "Junio 2025 - Presente",
             organisation: "branchX",
             description: [

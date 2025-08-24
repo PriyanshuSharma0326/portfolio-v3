@@ -32,7 +32,14 @@ export default function SocialLinks() {
                     transition={{ duration: 0.5, ease: "easeInOut", delay: 1.5 }} 
                     viewport={{ once: true, amount: 0.2 }} 
                 >
-                    <button onClick={handleLanguageClick} className={`${josefinSans.className} text-[#FFFFFCAA] text-[20px] leading-6`}>{language}</button>
+                    <motion.button
+                        onClick={handleLanguageClick}
+                        className={`${josefinSans.className} text-[#FFFFFCAA] text-[20px] leading-6`}
+                        whileHover={{ y: -2 }} 
+                        transition={{ type: "spring", stiffness: 300 }}
+                    >
+                        {language}
+                    </motion.button>
                 </motion.div>
                 
                 <SocialLink 
