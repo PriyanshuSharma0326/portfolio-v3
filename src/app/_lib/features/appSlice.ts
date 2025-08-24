@@ -3,7 +3,7 @@ import { AppState } from '../types';
 
 const initialState: AppState = {
     menuOpen: false,
-    language: 'es'
+    language: 'en'
 };
 
 const appSlice = createSlice({
