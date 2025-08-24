@@ -8,10 +8,21 @@ export interface SkillsList {
     skills: string[],
 }
 
-export interface experienceListType {
-    en: string[],
-    es: string[],
+export interface LangEntry {
+    role: string;
+    time: string;
+    organisation: string;
+    description: string[];
+    exp?: string;
 }
+
+export interface Experience {
+    id: number;
+    en: LangEntry;
+    es: LangEntry;
+}
+
+export type ExperienceListType = Experience[];
 
 export interface ProjectsType {
     id: number,

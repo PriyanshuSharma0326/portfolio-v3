@@ -2,7 +2,7 @@
 
 import { headerLinks } from "@/constants/lists";
 import { CrossIcon } from "@/app/_lib/icons/icons";
-import { closeMenu } from "@/app/_lib/features/appSlice";
+import { changeToSpanish, closeMenu, setDefaultLanguage } from "@/app/_lib/features/appSlice";
 import { josefinSans, readexPro, robotoMono } from "@/app/_lib/fonts";
 import { useAppDispatch, useAppSelector } from "@/app/_lib/store";
 import Link from "next/link";
@@ -44,6 +44,15 @@ export default function Menu() {
 
     const [containerOpen, setContainerOpen] = useState(false);
     const [sidebarOpen, setSidebarOpen] = useState(false);
+
+    function handleLanguageClick() {
+        if(language === 'es') {
+            dispatch(setDefaultLanguage());
+        }
+        else {
+            dispatch(changeToSpanish());
+        }
+    }
 
     useEffect(() => {
         if(menuOpen) {
@@ -87,6 +96,12 @@ export default function Menu() {
                         </span>
                         <span className="absolute inset-0 w-full h-full bg-neon translate-y-full group-hover:translate-y-0 transition-transform duration-500"></span>
                     </Link>
+
+                    <button onClick={handleLanguageClick} className={`${josefinSans.className} tracking-wider hidden max-[800px]:flex relative w-fit rounded-md px-4 pt-[14px] pb-[10px] text-[14px] leading-5 font-semibold text-neon bg-transparent overflow-hidden group -mt-2`}>
+                        <span className="relative z-10 transition-colors duration-500">
+                            {language === 'en' ? 'Cambiar a Español' : 'Change to English'}
+                        </span>
+                    </button>
                 </div>
             </div>
 

@@ -3,11 +3,38 @@
 import { GithubSocial, InstagramSocial, LinkedInSocial, TelegramSocial, TwitterSocial } from "@/app/_lib/icons/socialIcons";
 import { XRotateWrapper } from '@/app/_lib/FramerMotionWrappers';
 import SocialLink from './SocialLink';
+import { motion } from "framer-motion";
+import { josefinSans } from "@/app/_lib/fonts";
+import { useAppSelector } from "@/app/_lib/store";
+import { useDispatch } from "react-redux";
+import { changeToSpanish, setDefaultLanguage } from "@/app/_lib/features/appSlice";
 
 export default function SocialLinks() {
+    const dispatch = useDispatch();
+
+    const language = useAppSelector(state => state.app.language);
+
+    function handleLanguageClick() {
+        if(language === 'es') {
+            dispatch(setDefaultLanguage());
+        }
+        else {
+            dispatch(changeToSpanish());
+        }
+    }
+
     return (
         <div className="fixed right-0 bottom-0 h-[55%] w-48 max-[1440px]:w-40 max-[1280px]:w-32 max-[1152px]:w-28 max-[1024px]:w-20 max-[800px]:hidden flex flex-col items-center">
             <div className="h-full flex flex-col items-center gap-4">
+                <motion.div 
+                    initial={{ opacity: 0, rotateX: 90 }} 
+                    whileInView={{ opacity: 1, rotateX: 0 }} 
+                    transition={{ duration: 0.5, ease: "easeInOut", delay: 1.5 }} 
+                    viewport={{ once: true, amount: 0.2 }} 
+                >
+                    <button onClick={handleLanguageClick} className={`${josefinSans.className} text-[#FFFFFCAA] text-[20px] leading-6`}>{language}</button>
+                </motion.div>
+                
                 <SocialLink 
                     icon={GithubSocial} 
                     delay={1.25} 

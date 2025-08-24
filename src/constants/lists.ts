@@ -1,4 +1,4 @@
-import { experienceListType, ProjectsType, SkillsList } from "@/app/_lib/types";
+import { ExperienceListType, ProjectsType, SkillsList } from "@/app/_lib/types";
 
 const headerLinks = [
     {
@@ -48,22 +48,62 @@ const headerLinks = [
     },
 ]
 
-const experienceList: experienceListType = {
-    en: [
-        "Develop intuitive, high-performance web applications, focusing on seamless user experiences and efficient workflows.",
-        "Collaborate with backend teams to integrate APIs, enhance UI interactions, and refine product functionality.",
-        "Lead the development of key platform features, improving usability and streamlining content management.",
-        "Optimize web performance through modern frontend techniques, ensuring fast, responsive, and accessible applications.",
-        "Work closely with designers, product managers, and engineers to bring ideas to life and create impactful digital experiences.",
-    ],
-    es: [
-        "Desarrollar aplicaciones web intuitivas y de alto rendimiento, centrándose en experiencias de usuario fluidas y flujos de trabajo eficientes.",
-        "Colaborar con equipos de backend para integrar APIs, mejorar las interacciones de la interfaz de usuario y perfeccionar la funcionalidad del producto.",
-        "Liderar el desarrollo de funciones clave de la plataforma, mejorando la usabilidad y optimizando la gestión de contenidos.",
-        "Optimizar el rendimiento web mediante técnicas modernas de frontend, garantizando aplicaciones rápidas, receptivas y accesibles.",
-        "Trabajar en estrecha colaboración con diseñadores, gestores de producto e ingenieros para dar vida a las ideas y crear experiencias digitales impactantes.",
-    ],
-}
+const experienceList: ExperienceListType = [
+    {
+        id: 0,
+        en: {
+            role: "Front End Developer",
+            time: "April 2024 - June 2025",
+            organisation: "Hyprcom",
+            description: [
+                "Develop intuitive, high-performance web applications, focusing on seamless user experiences and efficient workflows.",
+                "Collaborate with backend teams to integrate APIs, enhance UI interactions, and refine product functionality.",
+                "Lead the development of key platform features, improving usability and streamlining content management.",
+                "Optimize web performance through modern frontend techniques, ensuring fast, responsive, and accessible applications.",
+                "Work closely with designers, product managers, and engineers to bring ideas to life and create impactful digital experiences."
+            ]
+        },
+        es: {
+            role: "Desarrollador Front End",
+            time: "Abril 2024 - Junio 2025",
+            organisation: "Hyprcom",
+            description: [
+                "Desarrollar aplicaciones web intuitivas y de alto rendimiento, centrándose en experiencias de usuario fluidas y flujos de trabajo eficientes.",
+                "Colaborar con equipos de backend para integrar APIs, mejorar las interacciones de la interfaz de usuario y perfeccionar la funcionalidad del producto.",
+                "Liderar el desarrollo de funciones clave de la plataforma, mejorando la usabilidad y optimizando la gestión de contenidos.",
+                "Optimizar el rendimiento web mediante técnicas modernas de frontend, garantizando aplicaciones rápidas, receptivas y accesibles.",
+                "Trabajar en estrecha colaboración con diseñadores, gestores de producto e ingenieros para dar vida a las ideas y crear experiencias digitales impactantes."
+            ]
+        }
+    },
+    {
+        id: 1,
+        en: {
+            role: "Frontend Developer",
+            time: "June 2025 - Present",
+            organisation: "branchX",
+            description: [
+                "Build and refine advanced frontend features for a fast-evolving platform.",
+                "Work closely with product and design teams to deliver high-quality user experiences.",
+                "Implement scalable solutions that support continuous growth and new functionalities.",
+                "Contribute to code quality through reviews, testing, and best practices.",
+                "Collaborate in a dynamic environment to ship impactful updates on tight schedules."
+            ]
+        },
+        es: {
+            role: "Desarrollador Frontend",
+            time: "Junio 2025 - Presente",
+            organisation: "branchX",
+            description: [
+                "Desarrollar y perfeccionar funciones avanzadas de frontend para una plataforma en constante evolución.",
+                "Trabajar estrechamente con los equipos de producto y diseño para ofrecer experiencias de usuario de alta calidad.",
+                "Implementar soluciones escalables que respalden el crecimiento continuo y nuevas funcionalidades.",
+                "Contribuir a la calidad del código mediante revisiones, pruebas y buenas prácticas.",
+                "Colaborar en un entorno dinámico para lanzar actualizaciones impactantes en plazos ajustados."
+            ]
+        }
+    }
+];
 
 const skillsList: SkillsList[] = [
     {
