@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 import { josefinSans } from "@/app/_lib/fonts";
 import { useAppSelector } from "@/app/_lib/store";
 import { useDispatch } from "react-redux";
-import { changeToSpanish, setDefaultLanguage } from "@/app/_lib/features/appSlice";
+import { changeToHindi, changeToSpanish, setDefaultLanguage } from "@/app/_lib/features/appSlice";
 
 export default function SocialLinks() {
     const dispatch = useDispatch();
@@ -16,6 +16,9 @@ export default function SocialLinks() {
 
     function handleLanguageClick() {
         if(language === 'es') {
+            dispatch(changeToHindi());
+        }
+        else if(language === 'hi') {
             dispatch(setDefaultLanguage());
         }
         else {

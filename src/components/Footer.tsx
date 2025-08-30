@@ -11,7 +11,12 @@ export default function Footer() {
     return (
         <div className={`${josefinSans.className} flex flex-col items-center gap-3 max-[1200px]:gap-2 max-[800px]:gap-1 py-4`}>
             <p className="font-light tracking-wide text-center text-[16px] leading-[22px] max-[800px]:text-[14px] max-[800px]:leading-[18px] text-gray1">
-                {language === 'en' ? 'Designed & Developed by' : 'Diseñado y desarrollado por'} Priyanshu
+                {language === 'en' 
+                ? 'Designed & Developed by' 
+                : language === 'es' 
+                    ? 'Diseñado y desarrollado por' 
+                    : 'डिज़ाइन एवं विकास किया गया'}
+                {' '} Priyanshu
             </p>
 
             <h1 className={`${rubik.className} max-[800px]:hidden tracking-normal font-normal text-neon text-[14px] leading-[22px] max-[800px]:text-[12px] max-[800px]:leading-[18px]`}>@xtechilad</h1>

@@ -5,6 +5,9 @@ export interface SkillsList {
     es: {
         title: string,
     }
+    hi: {
+        title: string,
+    }
     skills: string[],
 }
 
@@ -20,6 +23,7 @@ export interface Experience {
     id: number;
     en: LangEntry;
     es: LangEntry;
+    hi: LangEntry
 }
 
 export type ExperienceListType = Experience[];
@@ -30,12 +34,14 @@ export interface ProjectsType {
     project_title: {
         en: string,
         es: string,
+        hi: string,
     },
     live_url: string,
     source_url: string,
     description: {
         en: string,
         es: string,
+        hi: string,
     },
     stack: string[],
 }
@@ -46,10 +52,12 @@ export interface ProjectCardProps {
         project_title: {
             en: string,
             es: string,
+            hi: string,
         };
         description: {
             en: string,
             es: string,
+            hi: string,
         };
         source_url: string,
         live_url: string,

@@ -45,10 +45,22 @@ export default function Introduction() {
             intro: "¡Hola! Soy un desarrollador Front-End apasionado dedicado a la creación de sitios web visualmente impersionantes y funcionales.",
             intro2: "¡Bienvenido a mi sitio web de portafolio, espacio donde escaparate mi pasión por el desarrollo web y el arte!",
             buttonText: '¡Mira mi currículum!',
+        },
+        hi: {
+            greeting: "नमस्ते मैं",
+            role: (
+                <>
+                    एक <span>सॉफ़्टवेयर डेवलपर</span> तथा{' '}
+                    <span className={`${josefinSans.className} text-neon font-bold`}>
+                        फ्रंट-एंड अनुरागी
+                    </span>
+                </>
+            ),
+            intro: "नमस्ते! मैं एक फ्रंट-एंड डेवलपर हूँ, जो आकर्षक और उपयोगी वेबसाइटें बनाने के लिए समर्पित है। मुझे डिजाइन और तकनीक के मेल से काम करना और नए टूल्स सीखकर विचारों को हकीकत में बदलना पसंद है।",
+            intro2: "मेरी पोर्टफोलियो वेबसाइट पर आपका स्वागत है। यह वह जगह है जहाँ मैं वेब डेवलपमेंट और कला के प्रति अपना जुनून दिखाता हूँ।",
+            buttonText: "मेरा रिज़्यूमे देखें!"
         }
     };
-
-    const fullName = "Priyanshu Sharma";
 
     return (
         <div className="flex flex-col">
@@ -60,7 +72,7 @@ export default function Introduction() {
 
             <XRotateWrapper duration={0.25} delay={0.25}>
                 <h1 className={`${readexPro.className} -ml-1 max-[800px]:-ml-[3px] tracking-normal text-almostWhite text-[60px] leading-[68px] max-[800px]:text-[46px] max-[800px]:leading-[54px] max-[500px]:text-[32px] max-[500px]:leading-[46px] font-medium pb-4 max-[1024px]:pb-3 max-[800px]:pb-2`}>
-                    {fullName}
+                    {language === 'hi' ? 'प्रियंशु शर्मा' : 'Priyanshu Sharma'}
                 </h1>
             </XRotateWrapper>
 

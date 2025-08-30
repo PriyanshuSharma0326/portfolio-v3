@@ -13,7 +13,13 @@ export default function ProjectsSection() {
     return (
         <div id='projects' className="flex flex-col gap-12 max-[1152px]:gap-10 max-[800px]:gap-8 pt-36 max-[600px]:pt-28 mx-28 max-[1280px]:mx-20 max-[1152px]:mx-14 max-[1024px]:mx-0">
             <SectionTitle 
-                title={language === 'en' ? 'Projects' : 'Proyectos'} 
+                title={
+                language === 'en'
+                    ? 'Projects'
+                    : language === 'es'
+                    ? 'Proyectos'
+                    : 'प्रोजेक्ट्स'
+                }
                 index={4} 
             />
 

@@ -12,7 +12,13 @@ export default function Experience() {
     return (
         <div id='experience' className={"flex flex-col gap-12 max-[1152px]:gap-10 max-[800px]:gap-8 pt-36 max-[600px]:pt-28 mx-40 max-[1280px]:mx-28 max-[1024px]:mx-20 max-[800px]:mx-0"}>
             <SectionTitle 
-                title={language === 'en' ? 'Experience' : 'Vivencia'} 
+                title={
+                language === 'en'
+                    ? 'Experience'
+                    : language === 'es'
+                    ? 'Vivencia'
+                    : 'अनुभव'
+                }
                 index={2} 
             />
 

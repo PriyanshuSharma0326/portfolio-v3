@@ -21,13 +21,23 @@ export default function AboutMe() {
         es: {
             intro: "¡Holaa! Soy Priyanshu, y yo creo experiencias digitales que son a la vez funcionales y exquisitas. Apasionado por la fusión del diseño y la tecnología, me encanta crear aplicaciones web dinámicas, optimizar el rendimiento y explorar las últimas herramientas de frontend para dar vida a las ideas.",
             intro2: "Más allá de la web, me motiva el mundo de la tecnología, en constante evolución. Disfruto abordar problemas complejos, perfeccionar mis habilidades de resolución de problemas y sumergirme en tecnologías de la nube para ampliar mi experiencia."
+        },
+        hi: {
+            intro: "नमस्ते! मैं प्रियंशु हूँ और मैं ऐसे डिजिटल अनुभव बनाता हूँ जो उपयोगी होने के साथ-साथ देखने में भी अच्छे हों। डिज़ाइन और तकनीक के मेल से मुझे काम करना पसंद है। मुझे डायनेमिक वेब ऐप्स बनाना, उनका प्रदर्शन बेहतर करना और नए-नए फ्रंटएंड टूल्स सीखकर विचारों को हकीकत में बदलना अच्छा लगता है।",
+            intro2: "वेब से बाहर भी, बदलती हुई तकनीक की दुनिया मुझे प्रेरित करती है। मुझे कठिन समस्याओं को हल करना, अपनी समस्या-समाधान क्षमता को बेहतर बनाना और क्लाउड तकनीक सीखकर अपनी विशेषज्ञता बढ़ाना पसंद है।"
         }
     }
 
     return (
         <div id='about-me' className={"flex flex-col gap-12 pt-36 max-[600px]:pt-28 mx-16 max-[1280px]:mx-12 max-[1024px]:mx-8 max-[800px]:mx-0"}>
             <SectionTitle 
-                title={language === 'en' ? 'About Me' : 'Acerca de mí'} 
+                title={
+                language === 'en'
+                    ? 'About Me'
+                    : language === 'es'
+                    ? 'Acerca de mí'
+                    : 'मेरे बारे में'
+                }
                 index={1}
             />
 

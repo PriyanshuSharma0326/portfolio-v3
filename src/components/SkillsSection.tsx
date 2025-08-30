@@ -13,7 +13,13 @@ export default function SkillsSection() {
     return (
         <div id='skills' className="flex flex-col gap-12 max-[1152px]:gap-10 max-[800px]:gap-8 pt-36 max-[600px]:pt-28 mx-16 max-[1280px]:mx-12 max-[800px]:mx-0">
             <SectionTitle 
-                title={language === 'en' ? 'Skills' : 'Destrazas'} 
+                title={
+                language === 'en'
+                    ? 'Skills'
+                    : language === 'es'
+                    ? 'Destrazas'
+                    : 'स्किल्स'
+                }
                 index={3} 
             />
 

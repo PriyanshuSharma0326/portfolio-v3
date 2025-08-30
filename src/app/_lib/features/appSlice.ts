@@ -22,8 +22,11 @@ const appSlice = createSlice({
         changeToSpanish: (state) => {
             state.language = 'es';
         },
+        changeToHindi: (state) => {
+            state.language = 'hi';
+        },
     }
 });
 
-export const { openMenu, closeMenu, setDefaultLanguage, changeToSpanish } = appSlice.actions;
+export const { openMenu, closeMenu, setDefaultLanguage, changeToSpanish, changeToHindi } = appSlice.actions;
 export default appSlice.reducer;

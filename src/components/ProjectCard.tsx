@@ -46,7 +46,7 @@ export default function ProjectCard({ item }: ProjectCardProps) {
 
             <div className="max-[800px]:p-6 w-[50%] max-[1024px]:w-3/5 max-[800px]:w-full text-right max-[800px]:text-left absolute h-full bg-transparent right-0 top-0 flex flex-col gap-4 justify-center">
                 <h1
-                    className={`${readexPro.className} w-fit ml-auto max-[800px]:ml-0 text-[24px] leading-[36px] max-[1200px]:text-[22px] max-[1200px]:leading-[32px] max-[600px]:text-[20px] max-[800px]:leading-7 tracking-tight font-bold relative inline-block 
+                    className={`${readexPro.className} cursor-pointer w-fit ml-auto max-[800px]:ml-0 text-[24px] leading-[36px] max-[1200px]:text-[22px] max-[1200px]:leading-[32px] max-[600px]:text-[20px] max-[800px]:leading-7 tracking-tight font-bold relative inline-block 
                                 bg-gradient-to-r from-neon to-neon bg-[length:0%_100%] bg-no-repeat 
                                 transition-all duration-500 hover:bg-[length:100%_100%] text-almostWhite max-[800px]:text-neon hover:text-[#45FFCA67] max-[800px]:hover:text-neon bg-clip-text`}
                     >

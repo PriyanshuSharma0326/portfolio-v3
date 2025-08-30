@@ -24,6 +24,11 @@ export default function ContactMe() {
             top: "Contáctame",
             intro: "Estoy buscando activamente oportunidades freelance que desafíen mis habilidades y creatividad. Sin embargo, si tienes alguna otra solicitud o pregunta, no dudes en contactarme; ¡estaré encantado de ayudarte!",
             buttonText: "Salude"
+        },
+        hi: {
+            top: "संपर्क करें",
+            intro: "मैं सक्रिय रूप से फ्रीलांस अवसरों की तलाश कर रहा हूँ जो मेरी क्षमताओं और रचनात्मकता को चुनौती दें। हालांकि, यदि आपके पास कोई अन्य अनुरोध या प्रश्न हैं, तो बेझिझक संपर्क करें—मुझे यह चर्चा करने में खुशी होगी कि मैं आपकी कैसे मदद कर सकता हूँ!",
+            buttonText: "नमस्ते कहें"
         }
     }
 
