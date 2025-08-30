@@ -99,7 +99,12 @@ export default function Menu() {
 
                     <button onClick={handleLanguageClick} className={`${josefinSans.className} tracking-wider hidden max-[800px]:flex relative w-fit rounded-md px-4 pt-[14px] pb-[10px] text-[14px] leading-5 font-semibold text-neon bg-transparent overflow-hidden group -mt-2`}>
                         <span className="relative z-10 transition-colors duration-500">
-                            {language === 'en' ? 'Cambiar a Español' : 'Change to English'}
+                            {language === 'en' 
+                                ? 'Cambiar a Español' 
+                                : language === 'es' 
+                                    ? 'अंग्रेज़ी में बदलें' 
+                                    : 'Change to English'
+                            }
                         </span>
                     </button>
                 </div>
