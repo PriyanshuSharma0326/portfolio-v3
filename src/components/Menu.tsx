@@ -83,7 +83,7 @@ export default function Menu() {
                         return (
                             <HeaderLink 
                                 key={index} 
-                                title={link[language as 'en' | 'es'].title} 
+                                title={link[language as 'en' | 'es' | 'hi'].title} 
                                 id={link.id} 
                                 index={index} 
                             />
