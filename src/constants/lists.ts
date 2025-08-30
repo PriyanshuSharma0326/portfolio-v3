@@ -34,7 +34,7 @@ const headerLinks = [
             title: 'Destrazas'
         },
         hi: {
-            title: 'कौशल'
+            title: 'स्किल्स'
         }
     },
     {

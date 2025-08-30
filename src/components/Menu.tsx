@@ -109,7 +109,7 @@ export default function Menu() {
                             {language === 'en' 
                                 ? 'Cambiar a Español' 
                                 : language === 'es' 
-                                    ? 'अंग्रेज़ी में बदलें' 
+                                    ? 'हिंदी में बदलें' 
                                     : 'Change to English'
                             }
                         </span>
