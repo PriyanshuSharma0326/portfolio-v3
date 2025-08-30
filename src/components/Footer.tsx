@@ -16,7 +16,7 @@ export default function Footer() {
                 : language === 'es' 
                     ? 'Diseñado y desarrollado por' 
                     : 'डिज़ाइन एवं विकास किया गया'}
-                {' '} Priyanshu
+                {' '} {language === 'hi' ? 'प्रियंशु द्वारा' : 'Priyanshu'}
             </p>
 
             <h1 className={`${rubik.className} max-[800px]:hidden tracking-normal font-normal text-neon text-[14px] leading-[22px] max-[800px]:text-[12px] max-[800px]:leading-[18px]`}>@xtechilad</h1>

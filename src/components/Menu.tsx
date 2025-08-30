@@ -2,7 +2,7 @@
 
 import { headerLinks } from "@/constants/lists";
 import { CrossIcon } from "@/app/_lib/icons/icons";
-import { changeToSpanish, closeMenu, setDefaultLanguage } from "@/app/_lib/features/appSlice";
+import { changeToHindi, changeToSpanish, closeMenu, setDefaultLanguage } from "@/app/_lib/features/appSlice";
 import { josefinSans, readexPro, robotoMono } from "@/app/_lib/fonts";
 import { useAppDispatch, useAppSelector } from "@/app/_lib/store";
 import Link from "next/link";
@@ -47,6 +47,9 @@ export default function Menu() {
 
     function handleLanguageClick() {
         if(language === 'es') {
+            dispatch(changeToHindi());
+        }
+        else if(language === 'hi') {
             dispatch(setDefaultLanguage());
         }
         else {
@@ -92,7 +95,11 @@ export default function Menu() {
 
                     <Link href='https://drive.google.com/file/d/1UxYOgZ_jBab6nMvI8E7di0ciec4ZJ3Kg/view?usp=sharing' target="_blank" className={`${josefinSans.className} tracking-wider relative w-fit rounded-md px-6 max-[800px]:px-4 pt-4 max-[800px]:pt-[14px] pb-3 max-[800px]:pb-[10px] text-[16px] leading-[22px] max-[800px]:text-[14px] max-[800px]:leading-5 font-semibold text-neon border-2 border-neon bg-transparent overflow-hidden group mt-2`}>
                         <span className="relative z-10 transition-colors duration-500 group-hover:text-black">
-                            Resume
+                            {language === 'en' 
+                                ? 'Resume' 
+                                : language === 'es' 
+                                    ? 'Currículum' 
+                                    : 'रिज़्यूमे'}
                         </span>
                         <span className="absolute inset-0 w-full h-full bg-neon translate-y-full group-hover:translate-y-0 transition-transform duration-500"></span>
                     </Link>
