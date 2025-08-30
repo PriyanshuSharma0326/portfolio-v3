@@ -18,7 +18,7 @@ export default function SkillsSection() {
                     ? 'Skills'
                     : language === 'es'
                     ? 'Destrazas'
-                    : 'स्किल्स'
+                    : 'कौशल'
                 }
                 index={3} 
             />
