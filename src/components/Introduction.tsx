@@ -93,7 +93,7 @@ export default function Introduction() {
             </div>
 
             <LeftToPositionWrapper delay={1.25} className={`${josefinSans.className} tracking-wider relative w-fit rounded-md px-6 max-[800px]:px-4 pt-4 max-[800px]:pt-[14px] pb-3 max-[800px]:pb-[10px] text-[16px] leading-[22px] max-[800px]:text-[14px] max-[800px]:leading-5 font-semibold text-neon border-2 border-neon bg-transparent overflow-hidden group`}>
-                <Link href='https://drive.google.com/file/d/1Nn7thnPG82AopW1NeESFllGrC6ddz4Zw/view?usp=sharing' target="_blank" >
+                <Link href='https://drive.google.com/file/d/1t_xKc9zpTWMthw2RHTUq_T5nU_i61GHX/view?usp=sharing' target="_blank" >
                     <span className="relative z-10 transition-colors duration-500 group-hover:text-black">
                         {translations[language].buttonText}
                     </span>
