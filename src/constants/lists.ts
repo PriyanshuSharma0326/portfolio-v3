@@ -242,6 +242,29 @@ const skillsList: SkillsList[] = [
 const projects: ProjectsType[] = [
     {
         id: 1,
+        project_image: 'https://raw.githubusercontent.com/PriyanshuSharma0326/saas-analytics-dashboard/refs/heads/master/public/site-screenshot.png',
+        project_title: {
+            en: 'SaaS Dashboard',
+            es: 'Panel SaaS',
+            hi: 'सास डैशबोर्ड'
+        },
+        live_url: 'https://saas-analytics-dashboard-alpha-green.vercel.app',
+        source_url: 'https://github.com/PriyanshuSharma0326/saas-analytics-dashboard',
+        description: {
+            en: 'A modern SaaS analytics dashboard featuring interactive data visualizations, dynamic metrics tracking, and responsive UI optimized for performance.',
+            es: 'Un panel moderno de análisis SaaS con visualizaciones de datos interactivas, seguimiento dinámico de métricas y una interfaz receptiva optimizada para el rendimiento.',
+            hi: 'एक आधुनिक SaaS एनालिटिक्स डैशबोर्ड जिसमें इंटरएक्टिव डेटा विज़ुअलाइज़ेशन, डायनेमिक मेट्रिक्स ट्रैकिंग और परफॉर्मेंस के लिए अनुकूलित रेस्पॉन्सिव UI शामिल है।'
+        },
+        stack: [
+            'React',
+            'Tailwind CSS',
+            'Redux Toolkit',
+            'Recharts',
+            'Firebase'
+        ]
+    },
+    {
+        id: 2,
         project_image: 'https://raw.githubusercontent.com/PriyanshuSharma0326/spotify-clone/refs/heads/main/public/media/melofy-spotify-clone.vercel.app_.png',
         project_title: {
             en: 'Spotify Clone',
@@ -264,7 +287,7 @@ const projects: ProjectsType[] = [
         ]
     },
     {
-        id: 2,
+        id: 3,
         project_image: 'https://raw.githubusercontent.com/PriyanshuSharma0326/electronics-store-react/main/public/assets/desktop-siteshot.png',
         project_title: {
             en: 'CircuitCart',
@@ -287,7 +310,7 @@ const projects: ProjectsType[] = [
         ]
     },
     {
-        id: 3,
+        id: 4,
         project_image: 'https://raw.githubusercontent.com/PriyanshuSharma0326/telechat/main/public/media/desktop-siteshot.png',
         project_title: {
             en: 'Telechat',
@@ -311,7 +334,7 @@ const projects: ProjectsType[] = [
         ]
     },
     {
-        id: 4,
+        id: 5,
         project_image: 'https://raw.githubusercontent.com/PriyanshuSharma0326/react-news-app/main/public/assets/desktop-siteshot.png',
         project_title: {
             en: 'ReactReporter',
@@ -336,7 +359,7 @@ const projects: ProjectsType[] = [
         ]
     },
     {
-        id: 5,
+        id: 6,
         project_image: 'https://raw.githubusercontent.com/PriyanshuSharma0326/tic-tac-toe/main/design/desktop-design.png',
         project_title: {
             en: 'Tic Tac Toe',
@@ -357,7 +380,7 @@ const projects: ProjectsType[] = [
         ]
     },
     {
-        id: 6,
+        id: 7,
         project_image: 'https://raw.githubusercontent.com/PriyanshuSharma0326/pomodoro-clock/main/design/desktop-design.png',
         project_title: {
             en: 'Pomodoro Clock',
