@@ -242,6 +242,32 @@ const skillsList: SkillsList[] = [
 const projects: ProjectsType[] = [
     {
         id: 1,
+        project_image: 'https://raw.githubusercontent.com/PriyanshuSharma0326/kanban-system/refs/heads/master/public/site-screenshot.png', // adjust if repo name differs
+        project_title: {
+            en: 'Kanban Board',
+            es: 'Tablero Kanban',
+            hi: 'कानबन बोर्ड'
+        },
+        live_url: 'https://kanban-board-app-system.vercel.app',
+        source_url: 'https://github.com/PriyanshuSharma0326/kanban-system',
+        description: {
+            en: 'A production-style task management application with drag-and-drop functionality, real-time Firebase Firestore sync, team member management, dashboard analytics, and advanced search. Built with modern React architecture and responsive UI patterns.',
+            es: 'Una aplicación de gestión de tareas estilo producción con funcionalidad de arrastrar y soltar, sincronización en tiempo real con Firebase Firestore, gestión de miembros del equipo, panel analítico y búsqueda avanzada. Construida con arquitectura moderna de React y diseño responsivo.',
+            hi: 'ड्रैग-एंड-ड्रॉप कार्यक्षमता, रियल-टाइम Firebase Firestore सिंक, टीम सदस्य प्रबंधन, डैशबोर्ड एनालिटिक्स और एडवांस सर्च के साथ एक प्रोडक्शन-स्टाइल टास्क मैनेजमेंट एप्लिकेशन। आधुनिक React आर्किटेक्चर और रेस्पॉन्सिव UI पैटर्न के साथ बनाया गया।'
+        },
+        stack: [
+            'React',
+            'Vite (JS + SWC)',
+            'Redux Toolkit',
+            'Firebase Auth',
+            'Firebase Firestore',
+            'Tailwind CSS',
+            '@dnd-kit/core',
+            'Lucide React'
+        ]
+    },
+    {
+        id: 2,
         project_image: 'https://raw.githubusercontent.com/PriyanshuSharma0326/saas-analytics-dashboard/refs/heads/master/public/site-screenshot.png',
         project_title: {
             en: 'SaaS Dashboard',
@@ -264,7 +290,7 @@ const projects: ProjectsType[] = [
         ]
     },
     {
-        id: 2,
+        id: 3,
         project_image: 'https://raw.githubusercontent.com/PriyanshuSharma0326/spotify-clone/refs/heads/main/public/media/melofy-spotify-clone.vercel.app_.png',
         project_title: {
             en: 'Spotify Clone',
@@ -287,7 +313,7 @@ const projects: ProjectsType[] = [
         ]
     },
     {
-        id: 3,
+        id: 4,
         project_image: 'https://raw.githubusercontent.com/PriyanshuSharma0326/electronics-store-react/main/public/assets/desktop-siteshot.png',
         project_title: {
             en: 'CircuitCart',
@@ -310,7 +336,7 @@ const projects: ProjectsType[] = [
         ]
     },
     {
-        id: 4,
+        id: 5,
         project_image: 'https://raw.githubusercontent.com/PriyanshuSharma0326/telechat/main/public/media/desktop-siteshot.png',
         project_title: {
             en: 'Telechat',
@@ -334,7 +360,7 @@ const projects: ProjectsType[] = [
         ]
     },
     {
-        id: 5,
+        id: 6,
         project_image: 'https://raw.githubusercontent.com/PriyanshuSharma0326/react-news-app/main/public/assets/desktop-siteshot.png',
         project_title: {
             en: 'ReactReporter',
@@ -356,48 +382,6 @@ const projects: ProjectsType[] = [
             'Firebase',
             'React Router',
             'Axios'
-        ]
-    },
-    {
-        id: 6,
-        project_image: 'https://raw.githubusercontent.com/PriyanshuSharma0326/tic-tac-toe/main/design/desktop-design.png',
-        project_title: {
-            en: 'Tic Tac Toe',
-            es: 'Tres en raya',
-            hi: 'टिक टैक टो'
-        },
-        live_url: 'https://priyanshusharma0326.github.io/tic-tac-toe/',
-        source_url: 'https://github.com/PriyanshuSharma0326/tic-tac-toe',
-        description: {
-            en: 'The popular Tic Tac Toe game built on JavaScript. The game allows users to compete against the computer on a 3x3 grid.',
-            es: 'El popular juego de Tres en raya desarrollado en JavaScript. Permite a los usuarios competir contra la computadora en una cuadrícula de 3x3.',
-            hi: 'लोकप्रिय टिक टैक टो गेम, जो जावास्क्रिप्ट पर बनाया गया है। यह गेम उपयोगकर्ताओं को 3x3 ग्रिड पर कंप्यूटर के खिलाफ प्रतिस्पर्धा करने की अनुमति देता है।'
-        },
-        stack: [
-            'HTML',
-            'CSS',
-            'JavaScript',
-        ]
-    },
-    {
-        id: 7,
-        project_image: 'https://raw.githubusercontent.com/PriyanshuSharma0326/pomodoro-clock/main/design/desktop-design.png',
-        project_title: {
-            en: 'Pomodoro Clock',
-            es: 'Reloj Pomodoro',
-            hi: 'पोमोडोरो घड़ी',
-        },
-        live_url: 'https://priyanshusharma0326.github.io/pomodoro-clock/',
-        source_url: 'https://github.com/PriyanshuSharma0326/pomodoro-clock',
-        description: {
-            en: 'Pomodoro application helps users manage their time using the Pomodoro Technique, a time management method developed by Francesco Cirillo.',
-            es: 'La aplicación Pomodoro ayuda a los usuarios a gestionar su tiempo utilizando la Técnica Pomodoro, un método de gestión del tiempo desarrollado por Francesco Cirillo.',
-            hi: 'पोमोडोरो एप्लिकेशन उपयोगकर्ताओं को पोमोडोरो तकनीक का उपयोग करके अपने समय का प्रबंधन करने में मदद करता है, जो फ्रांसेस्को सिरिल्लो द्वारा विकसित एक समय प्रबंधन विधि है।'
-        },
-        stack: [
-            'HTML',
-            'CSS',
-            'JavaScript',
         ]
     },
 ];
