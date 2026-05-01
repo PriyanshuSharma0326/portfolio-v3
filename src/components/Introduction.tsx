@@ -3,6 +3,7 @@ import { LeftToPositionWrapper, XRotateWrapper } from "@/app/_lib/FramerMotionWr
 import Link from "next/link";
 import { useAppSelector } from "@/app/_lib/store";
 import { ReactNode } from "react";
+import { RESUME_LINK } from "@/constants/lists";
 
 export default function Introduction() {
     const language = useAppSelector(state => state.app.language);
@@ -93,7 +94,7 @@ export default function Introduction() {
             </div>
 
             <LeftToPositionWrapper delay={1.25} className={`${josefinSans.className} tracking-wider relative w-fit rounded-md px-6 max-[800px]:px-4 pt-4 max-[800px]:pt-[14px] pb-3 max-[800px]:pb-[10px] text-[16px] leading-[22px] max-[800px]:text-[14px] max-[800px]:leading-5 font-semibold text-neon border-2 border-neon bg-transparent overflow-hidden group`}>
-                <Link href='https://drive.google.com/file/d/1k27iv-M_qc_75lRFdj1OHz0uacRn1m96/view?usp=sharing' target="_blank" >
+                <Link href={RESUME_LINK} target="_blank" >
                     <span className="relative z-10 transition-colors duration-500 group-hover:text-black">
                         {translations[language].buttonText}
                     </span>

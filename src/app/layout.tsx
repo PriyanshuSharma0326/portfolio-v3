@@ -28,8 +28,6 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
 
                     <Menu />
 
-                    {/* <LanguageToggle /> */}
-
                     {children}
 
                     <SocialLinks />

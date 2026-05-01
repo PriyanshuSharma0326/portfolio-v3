@@ -386,9 +386,12 @@ const projects: ProjectsType[] = [
     },
 ];
 
+const RESUME_LINK = 'https://drive.google.com/file/d/1xwWUGAFOpbk040nqzv0ctDFJLmlCnaVi/view?usp=sharing';
+
 export {
     experienceList,
     skillsList,
     projects,
     headerLinks,
+    RESUME_LINK
 }

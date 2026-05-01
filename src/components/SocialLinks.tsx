@@ -37,7 +37,7 @@ export default function SocialLinks() {
                 >
                     <motion.button
                         onClick={handleLanguageClick}
-                        className={`${josefinSans.className} text-[#FFFFFCAA] text-[20px] leading-6`}
+                        className={`${josefinSans.className} text-[#FFFFFCAA] hover:text-[#45FFCA] text-[20px] leading-6 transition-colors duration-200`}
                         whileHover={{ y: -2 }} 
                         transition={{ type: "spring", stiffness: 300 }}
                     >
