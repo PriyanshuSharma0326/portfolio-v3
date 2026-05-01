@@ -107,7 +107,7 @@ const experienceList: ExperienceListType = [
         id: 1,
         en: {
             role: "ReactJS Developer",
-            time: "June 2025 - Present",
+            time: "June 2025 - December 2025",
             organisation: "branchX",
             description: [
                 "Build and refine advanced frontend features for a fast-evolving platform.",
@@ -119,7 +119,7 @@ const experienceList: ExperienceListType = [
         },
         es: {
             role: "Desarrollador de ReactJS",
-            time: "Junio 2025 - Presente",
+            time: "Junio 2025 - Diciembre 2025",
             organisation: "branchX",
             description: [
                 "Desarrollar y perfeccionar funciones avanzadas de frontend para una plataforma en constante evolución.",
@@ -131,7 +131,7 @@ const experienceList: ExperienceListType = [
         },
         hi: {
             role: "ReactJS डेवलपर",
-            time: "जून 2025 - वर्तमान",
+            time: "जून 2025 - दिसंबर 2025",
             organisation: "ब्रांच-एक्स",
             description: [
                 "तेज़ी से बढ़ते प्लेटफ़ॉर्म के लिए उन्नत फ्रंटएंड फीचर्स बनाना और सुधारना।",
