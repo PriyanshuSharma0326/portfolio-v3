@@ -120,7 +120,7 @@ const experienceList: ExperienceListType = [
         es: {
             role: "Desarrollador de ReactJS",
             time: "Junio 2025 - Diciembre 2025",
-            organisation: "Branch India Limited",
+            organisation: "Branchx India Limited",
             description: [
                 "Desarrollar y perfeccionar funciones avanzadas de frontend para una plataforma en constante evolución.",
                 "Trabajar estrechamente con los equipos de producto y diseño para ofrecer experiencias de usuario de alta calidad.",
