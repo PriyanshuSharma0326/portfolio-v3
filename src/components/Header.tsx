@@ -55,6 +55,7 @@ export default function Header() {
                     alt="User Logo"
                     width={50}
                     height={50}
+                    priority
                     className={`cursor-pointer absolute transition-opacity duration-200 ${isHovered ? 'opacity-0' : 'opacity-100'}`}
                 />
                 <Image

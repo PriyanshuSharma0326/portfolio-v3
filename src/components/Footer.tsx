@@ -1,6 +1,6 @@
 'use client';
 
-import { josefinSans, rubik } from "@/app/_lib/fonts";
+import { readexPro, robotoMono } from "@/app/_lib/fonts";
 import SocialLink from "./SocialLink";
 import { GithubSocial, InstagramSocial, LinkedInSocial, TelegramSocial, TwitterSocial } from "@/app/_lib/icons/socialIcons";
 import { useAppSelector } from "@/app/_lib/store";
@@ -9,7 +9,7 @@ export default function Footer() {
     const language = useAppSelector(state => state.app.language);
 
     return (
-        <div className={`${josefinSans.className} flex flex-col items-center gap-3 max-[1200px]:gap-2 max-[800px]:gap-1 py-4`}>
+        <div className={`${readexPro.className} flex flex-col items-center gap-3 max-[1200px]:gap-2 max-[800px]:gap-1 py-4`}>
             <p className="font-light tracking-wide text-center text-[16px] leading-[22px] max-[800px]:text-[14px] max-[800px]:leading-[18px] text-gray1">
                 {language === 'en' 
                 ? 'Designed & Developed by' 
@@ -19,7 +19,7 @@ export default function Footer() {
                 {' '} {language === 'hi' ? 'प्रियंशु द्वारा' : 'Priyanshu'}
             </p>
 
-            <h1 className={`${rubik.className} max-[800px]:hidden tracking-normal font-normal text-neon text-[14px] leading-[22px] max-[800px]:text-[12px] max-[800px]:leading-[18px]`}>@xtechilad</h1>
+            <h1 className={`${robotoMono.className} max-[800px]:hidden tracking-tight font-normal text-neon text-[14px] leading-[22px] max-[800px]:text-[12px] max-[800px]:leading-[18px]`}>@xtechilad</h1>
 
             <div className="hidden max-[800px]:flex items-center gap-4 mt-2">
                 <SocialLink 

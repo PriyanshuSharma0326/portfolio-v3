@@ -29,7 +29,7 @@ export default function Home() {
                     <SkillsSection />
                 </SectionWrapper>
 
-                <SectionWrapper duration={0.75}>
+                <SectionWrapper>
                     <ProjectsSection />
                 </SectionWrapper>
 

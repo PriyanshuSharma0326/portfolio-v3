@@ -29,7 +29,6 @@ export interface Experience {
 export type ExperienceListType = Experience[];
 
 export interface ProjectsType {
-    id: number,
     project_image: string,
     project_title: {
         en: string,

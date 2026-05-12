@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { LeftToPositionWrapperProps, SectionrapperProps, XRotateWrapperProps } from "./types";
 
-function SectionWrapper({ children, delay = 0, duration = 1.25 }: SectionrapperProps) {
+function SectionWrapper({ children, delay = 0, duration = 1.1 }: SectionrapperProps) {
     return (
         <motion.div
             initial={{ opacity: 0, y: 0 }}
@@ -18,9 +18,10 @@ function XRotateWrapper({ children, className = "", delay = 0, duration = 0.35 }
     return (
         <motion.div 
             className={className}
-            initial={{ opacity: 0, rotateX: 90 }} 
+            style={{ transformOrigin: "top center", perspective: 1000 }}
+            initial={{ opacity: 0, rotateX: 45 }} 
             whileInView={{ opacity: 1, rotateX: 0 }} 
-            transition={{ duration, ease: "easeIn", delay }} 
+            transition={{ duration, ease: "easeOut", delay }} 
             viewport={{ once: true, amount: 0.2 }} 
         >
             {children}
@@ -34,7 +35,7 @@ function LeftToPositionWrapper({ children, className = "", delay = 0, duration =
             className={className}
             initial={{ opacity: 0, x: -90 }} 
             whileInView={{ opacity: 1, x: 0 }} 
-            transition={{ duration, ease: "easeInOut", delay }} 
+            transition={{ duration, ease: "easeOut", delay }} 
             viewport={{ once: true, amount: 0.2 }} 
         >
             {children}

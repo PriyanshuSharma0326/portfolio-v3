@@ -108,7 +108,7 @@ const experienceList: ExperienceListType = [
         en: {
             role: "ReactJS Developer",
             time: "June 2025 - December 2025",
-            organisation: "branchX",
+            organisation: "Branchx India Limited",
             description: [
                 "Build and refine advanced frontend features for a fast-evolving platform.",
                 "Work closely with product and design teams to deliver high-quality user experiences.",
@@ -120,7 +120,7 @@ const experienceList: ExperienceListType = [
         es: {
             role: "Desarrollador de ReactJS",
             time: "Junio 2025 - Diciembre 2025",
-            organisation: "branchX",
+            organisation: "Branch India Limited",
             description: [
                 "Desarrollar y perfeccionar funciones avanzadas de frontend para una plataforma en constante evolución.",
                 "Trabajar estrechamente con los equipos de producto y diseño para ofrecer experiencias de usuario de alta calidad.",
@@ -132,7 +132,7 @@ const experienceList: ExperienceListType = [
         hi: {
             role: "ReactJS डेवलपर",
             time: "जून 2025 - दिसंबर 2025",
-            organisation: "ब्रांच-एक्स",
+            organisation: "ब्रांच-एक्स इंडिया लिमिटेड",
             description: [
                 "तेज़ी से बढ़ते प्लेटफ़ॉर्म के लिए उन्नत फ्रंटएंड फीचर्स बनाना और सुधारना।",
                 "प्रोडक्ट और डिज़ाइन टीम के साथ मिलकर उच्च गुणवत्ता वाले उपयोगकर्ता अनुभव देना।",
@@ -241,7 +241,6 @@ const skillsList: SkillsList[] = [
 
 const projects: ProjectsType[] = [
     {
-        id: 1,
         project_image: 'https://raw.githubusercontent.com/PriyanshuSharma0326/kanban-system/refs/heads/master/public/site-screenshot.png', // adjust if repo name differs
         project_title: {
             en: 'Kanban Board',
@@ -267,7 +266,6 @@ const projects: ProjectsType[] = [
         ]
     },
     {
-        id: 2,
         project_image: 'https://raw.githubusercontent.com/PriyanshuSharma0326/saas-analytics-dashboard/refs/heads/master/public/site-screenshot.png',
         project_title: {
             en: 'SaaS Dashboard',
@@ -290,7 +288,6 @@ const projects: ProjectsType[] = [
         ]
     },
     {
-        id: 3,
         project_image: 'https://raw.githubusercontent.com/PriyanshuSharma0326/spotify-clone/refs/heads/main/public/media/melofy-spotify-clone.vercel.app_.png',
         project_title: {
             en: 'Spotify Clone',
@@ -313,7 +310,6 @@ const projects: ProjectsType[] = [
         ]
     },
     {
-        id: 4,
         project_image: 'https://raw.githubusercontent.com/PriyanshuSharma0326/electronics-store-react/main/public/assets/desktop-siteshot.png',
         project_title: {
             en: 'CircuitCart',
@@ -336,7 +332,6 @@ const projects: ProjectsType[] = [
         ]
     },
     {
-        id: 5,
         project_image: 'https://raw.githubusercontent.com/PriyanshuSharma0326/telechat/main/public/media/desktop-siteshot.png',
         project_title: {
             en: 'Telechat',
@@ -360,7 +355,6 @@ const projects: ProjectsType[] = [
         ]
     },
     {
-        id: 6,
         project_image: 'https://raw.githubusercontent.com/PriyanshuSharma0326/react-news-app/main/public/assets/desktop-siteshot.png',
         project_title: {
             en: 'ReactReporter',

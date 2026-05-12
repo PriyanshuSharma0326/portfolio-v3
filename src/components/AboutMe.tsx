@@ -29,47 +29,50 @@ export default function AboutMe() {
     }
 
     return (
-        <div id='about-me' className={"flex flex-col gap-12 pt-36 max-[600px]:pt-28 mx-16 max-[1280px]:mx-12 max-[1024px]:mx-8 max-[800px]:mx-0"}>
-            <SectionTitle 
+        <div id='about-me' className={"flex flex-col gap-12 pt-28 max-[600px]:pt-22 mx-16 max-[1280px]:mx-12 max-[1024px]:mx-8 max-[800px]:mx-0"}>
+            <SectionTitle
                 title={
-                language === 'en'
-                    ? 'About Me'
-                    : language === 'es'
-                    ? 'Acerca de mí'
-                    : 'मेरे बारे में'
+                    language === 'en'
+                        ? 'About Me'
+                        : language === 'es'
+                        ? 'Acerca de mí'
+                        : 'मेरे बारे में'
                 }
                 index={1}
             />
 
             <div className="flex items-center gap-16 max-[1024px]:gap-[58px] max-[800px]:flex-col-reverse">
-                <div className="w-[70%] max-[800px]:w-full text-[16px] leading-[26px] max-[500px]:text-[13px] max-[500px]:leading-[22px] tracking-wider font-light text-gray1 flex flex-col gap-4">
-                    <LeftToPositionWrapper duration={0.25} delay={0.15}>
+                <div className="w-[70%] max-[800px]:w-full text-[16px] leading-[26px] max-[500px]:text-[13px] max-[500px]:leading-[22px] tracking-wider font-light text-gray2 flex flex-col gap-4">
+                    <LeftToPositionWrapper duration={0.5} delay={0.1}>
                         <p>{translations[language].intro}</p>
                     </LeftToPositionWrapper>
 
-                    <LeftToPositionWrapper duration={0.25} delay={0.4}>
+                    <LeftToPositionWrapper duration={0.5} delay={0.3}>
                         <p>{translations[language].intro2}</p>
                     </LeftToPositionWrapper>
                 </div>
 
-                <div className="max-[800px]:ml-4 w-[30%] max-[1024px]:w-1/2 ">
-                    <XRotateWrapper delay={0.4} duration={0.25} className="w-full h-full relative group">
-                        <Image 
-                            src='/ProfilePicture.png' 
-                            alt='User Image' 
+                <div className="max-[800px]:ml-4 w-[30%] max-[1024px]:w-1/2 min-h-[100px]">
+                    <XRotateWrapper delay={0.2} duration={0.5} className="w-full relative group">
+                        <Image
+                            src='/ProfilePicture.png'
+                            alt='User Image'
                             width={0}
                             height={0}
                             sizes="100vw"
                             style={{ width: '90%', height: 'auto' }}
-                            className='aspect-square rounded-md relative z-5' 
+                            className='aspect-square rounded-md relative z-5'
                         />
 
-                        <div 
-                            className="w-full aspect-square absolute -z-10 rounded-md -left-2 max-[1024px]:-left-1 top-[3px] border-[3px] border-neon group-hover:left-8 max-[1024px]:group-hover:left-6 transition-all duration-300 delay-75" 
-                            style={{ width: '90%', height: 'auto' }} 
+                        <div
+                            className="w-full aspect-square absolute -z-10 rounded-md -left-2 max-[1024px]:-left-1 top-[3px] border-[3px] border-neon group-hover:left-8 max-[1024px]:group-hover:left-6 transition-all duration-300 delay-75"
+                            style={{ width: '90%', height: 'auto' }}
                         ></div>
 
-                        <div className="w-full aspect-square bg-[#45FFCA1F] rounded-md transition-all duration-300 delay-75 absolute -z-20 top-[3px] -left-2 max-[1024px]:-left-1 group-hover:top-10 max-[1024px]:group-hover:top-8" style={{ width: '90%', height: 'auto' }}></div>
+                        <div
+                            className="w-full aspect-square bg-[#45FFCA1F] rounded-md transition-all duration-300 delay-75 absolute -z-20 top-[3px] -left-2 max-[1024px]:-left-1 group-hover:top-10 max-[1024px]:group-hover:top-8"
+                            style={{ width: '90%', height: 'auto' }}
+                        ></div>
                     </XRotateWrapper>
                 </div>
             </div>

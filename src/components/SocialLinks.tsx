@@ -1,7 +1,6 @@
 'use client';
 
 import { GithubSocial, InstagramSocial, LinkedInSocial, TelegramSocial, TwitterSocial } from "@/app/_lib/icons/socialIcons";
-import { XRotateWrapper } from '@/app/_lib/FramerMotionWrappers';
 import SocialLink from './SocialLink';
 import { motion } from "framer-motion";
 import { josefinSans } from "@/app/_lib/fonts";
@@ -32,7 +31,7 @@ export default function SocialLinks() {
                 <motion.div 
                     initial={{ opacity: 0, rotateX: 90 }} 
                     whileInView={{ opacity: 1, rotateX: 0 }} 
-                    transition={{ duration: 0.5, ease: "easeInOut", delay: 1.5 }} 
+                    transition={{ duration: 0.50, ease: "easeInOut", delay: 1.2 }} 
                     viewport={{ once: true, amount: 0.2 }} 
                 >
                     <motion.button
@@ -47,35 +46,41 @@ export default function SocialLinks() {
                 
                 <SocialLink 
                     icon={GithubSocial} 
-                    delay={1.25} 
+                    delay={1} 
                     link={'https://www.github.com/PriyanshuSharma0326'} 
                 />
 
                 <SocialLink 
                     icon={LinkedInSocial} 
-                    delay={1} 
+                    delay={0.9} 
                     link={'https://www/linkedin.com/in/PriyanshuSharma0326'} 
                 />
 
                 <SocialLink 
                     icon={InstagramSocial} 
-                    delay={0.75} 
+                    delay={0.8} 
                     link={'https://www.instagram.com/xtechilad.jpg'} 
                 />
 
                 <SocialLink 
                     icon={TwitterSocial} 
-                    delay={0.5} 
+                    delay={0.7} 
                     link={'https://www.x.com/xtechilad'} 
                 />
 
                 <SocialLink 
                     icon={TelegramSocial} 
-                    delay={0.25} 
+                    delay={0.6} 
                     link={'https://t.me/xtechilad'} 
                 />
 
-                <XRotateWrapper className="mt-4 w-[2px] bg-[linear-gradient(180deg,_rgba(69,255,202,1)_0%,_rgba(0,0,0,0)_100%)] flex-grow"></XRotateWrapper>
+                <motion.div
+                    className="mt-2 w-[2px] bg-[linear-gradient(180deg,_rgba(69,255,202,1)_0%,_rgba(0,0,0,0)_100%)] flex-grow"
+                    initial={{ scaleY: 0, originY: 1 }}
+                    animate={{ scaleY: 1, originY: 1 }}
+                    transition={{ duration: 0.4, ease: "easeOut", delay: 0.3 }}
+                    style={{ transformOrigin: "bottom" }}
+                />
             </div>
         </div>
     );

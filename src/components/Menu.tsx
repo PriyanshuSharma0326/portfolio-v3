@@ -104,7 +104,7 @@ export default function Menu() {
                         <span className="absolute inset-0 w-full h-full bg-neon translate-y-full group-hover:translate-y-0 transition-transform duration-500"></span>
                     </Link>
 
-                    <button onClick={handleLanguageClick} className={`${josefinSans.className} tracking-wider hidden max-[800px]:flex relative w-fit rounded-md px-4 pt-[14px] pb-[10px] text-[14px] leading-5 font-semibold text-neon bg-transparent overflow-hidden group -mt-2`}>
+                    <button onClick={handleLanguageClick} className={`${readexPro.className} tracking-wider hidden max-[800px]:flex relative w-fit rounded-md px-4 pt-[14px] pb-[10px] text-[14px] leading-5 font-medium text-neon bg-transparent overflow-hidden group -mt-2`}>
                         <span className="relative z-10 transition-colors duration-500">
                             {language === 'en' 
                                 ? 'Cambiar a Español' 
