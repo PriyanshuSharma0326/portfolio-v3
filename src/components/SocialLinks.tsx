@@ -53,7 +53,7 @@ export default function SocialLinks() {
                 <SocialLink 
                     icon={LinkedInSocial} 
                     delay={0.9} 
-                    link={'https://www/linkedin.com/in/PriyanshuSharma0326'} 
+                    link={'https://www.linkedin.com/in/PriyanshuSharma0326'} 
                 />
 
                 <SocialLink 

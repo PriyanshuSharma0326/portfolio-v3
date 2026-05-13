@@ -30,7 +30,7 @@ export default function Footer() {
                 <SocialLink 
                     icon={LinkedInSocial} 
                     delay={0.25} 
-                    link={'https://www/linkedin.com/in/PriyanshuSharma0326'} 
+                    link={'https://www.linkedin.com/in/PriyanshuSharma0326'} 
                 />
 
                 <SocialLink 
