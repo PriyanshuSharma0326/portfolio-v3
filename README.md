@@ -1,36 +1,157 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio v3
+
+A modern personal portfolio for Priyanshu Sharma, built with Next.js, React, TypeScript, Tailwind CSS, Redux Toolkit, and Framer Motion.
+
+The site presents a frontend developer profile with animated sections for introduction, about, experience, skills, projects, social links, resume access, and contact.
+
+## Features
+
+- Responsive portfolio layout for desktop, tablet, and mobile screens.
+- Animated page sections and UI elements using Framer Motion.
+- App Router structure with reusable React components.
+- Redux-powered UI state for mobile menu and language selection.
+- English, Spanish, and Hindi content support.
+- Project cards with live links, source links, screenshots, descriptions, and tech stacks.
+- Custom Tailwind theme with portfolio colors, typography, and scrollbar styling.
+- Optimized images through Next.js image configuration.
+
+## Tech Stack
+
+- Next.js 15
+- React 19
+- TypeScript
+- Tailwind CSS
+- Redux Toolkit
+- React Redux
+- Framer Motion
+- Next Font
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18.18 or newer
+- npm
+
+### Installation
+
+```bash
+npm install
+```
+
+### Development
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Production Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm run start
+```
 
-## Learn More
+## Available Scripts
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Starts the local development server.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm run build
+```
 
-## Deploy on Vercel
+Creates an optimized production build.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+npm run start
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Runs the production build locally.
+
+```bash
+npm run lint
+```
+
+Runs the configured lint command.
+
+## Project Structure
+
+```text
+public/
+  ProfilePicture.png
+  UserLogo.png
+  Wink.png
+
+src/
+  app/
+    _lib/
+      features/
+      icons/
+      fonts.ts
+      store.ts
+      types.ts
+    globals.css
+    layout.tsx
+    page.tsx
+    StoreProvider.tsx
+  components/
+    AboutMe.tsx
+    ContactMe.tsx
+    Experience.tsx
+    Footer.tsx
+    Header.tsx
+    Introduction.tsx
+    Menu.tsx
+    ProjectCard.tsx
+    ProjectsSection.tsx
+    SkillsSection.tsx
+    SocialLinks.tsx
+  constants/
+    lists.ts
+```
+
+## Content Updates
+
+Most portfolio content is managed in `src/constants/lists.ts`.
+
+- Update navigation labels in `headerLinks`.
+- Update work history in `experienceList`.
+- Update skill badge groups in `skillsList`.
+- Update featured work in `projects`.
+- Update the resume URL in `RESUME_LINK`.
+
+Profile images and logo assets live in `public/`.
+
+## Styling
+
+Global styles are defined in `src/app/globals.css`, and the custom Tailwind theme is configured in `tailwind.config.ts`.
+
+The app uses Google fonts loaded through `next/font` in `src/app/_lib/fonts.ts`.
+
+## Image Domains
+
+Remote images are configured in `next.config.ts` for:
+
+- `img.shields.io`
+- `raw.githubusercontent.com`
+- `private-user-images.githubusercontent.com`
+
+Add additional domains there before using new remote image sources with `next/image`.
+
+## Deployment
+
+This project is ready to deploy on Vercel or any platform that supports Next.js.
+
+For Vercel, connect the repository and use the default Next.js build settings:
+
+```bash
+npm run build
+```
+
+No environment variables are required for the current portfolio content.
