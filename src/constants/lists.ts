@@ -241,7 +241,35 @@ const skillsList: SkillsList[] = [
 
 const projects: ProjectsType[] = [
     {
-        project_image: 'https://raw.githubusercontent.com/PriyanshuSharma0326/kanban-system/refs/heads/master/public/site-screenshot.png', // adjust if repo name differs
+        project_image: 'https://raw.githubusercontent.com/PriyanshuSharma0326/intervia/refs/heads/master/client/public/site-screenshot.png',
+        project_title: {
+            en: 'Intervia',
+            es: 'Intervia',
+            hi: 'इंटरविया'
+        },
+        live_url: 'https://intervia-ai-interview.vercel.app',
+        source_url: 'https://github.com/PriyanshuSharma0326/intervia',
+        description: {
+            en: 'A full-stack AI mock interview app with authentication, role-based interview sessions, Groq-powered question generation, per-answer feedback, scoring, interview history, session review, password reset, and browser speech-to-text input.',
+            es: 'Una aplicación full-stack de entrevistas simuladas con IA, autenticación, sesiones por rol, generación de preguntas con Groq, retroalimentación por respuesta, puntuación, historial de entrevistas, revisión de sesiones, restablecimiento de contraseña y entrada por voz del navegador.',
+            hi: 'एक फुल-स्टैक AI मॉक इंटरव्यू ऐप जिसमें ऑथेंटिकेशन, रोल-बेस्ड इंटरव्यू सेशन, Groq से प्रश्न जनरेशन, हर उत्तर पर फीडबैक, स्कोरिंग, इंटरव्यू हिस्ट्री, सेशन रिव्यू, पासवर्ड रीसेट और ब्राउज़र स्पीच-टू-टेक्स्ट इनपुट शामिल हैं।'
+        },
+        stack: [
+            'React',
+            'Vite',
+            'Redux Toolkit',
+            'React Router',
+            'Tailwind CSS',
+            'Node.js',
+            'Express.js',
+            'PostgreSQL',
+            'Supabase',
+            'JWT',
+            'Groq API'
+        ]
+    },
+    {
+        project_image: 'https://raw.githubusercontent.com/PriyanshuSharma0326/kanban-system/refs/heads/master/public/site-screenshot.png',
         project_title: {
             en: 'Kanban Board',
             es: 'Tablero Kanban',
@@ -380,7 +408,7 @@ const projects: ProjectsType[] = [
     },
 ];
 
-const RESUME_LINK = 'https://drive.google.com/file/d/1xwWUGAFOpbk040nqzv0ctDFJLmlCnaVi/view?usp=sharing';
+const RESUME_LINK = 'https://drive.google.com/file/d/1fvXuLEYRUIMLteBcSdStHSpdSns7pZUE/view?usp=sharing';
 
 export {
     experienceList,
